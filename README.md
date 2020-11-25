@@ -2,10 +2,6 @@
 
 Tracking covid 19 status specifically in specific Kabupaten
 
-web client https://covkab-client.web.app## Local Covkab NewsPaper App 
-
-Tracking covid 19 status specifically in specific Kabupaten
-
 web client https://covkab-client.web.app
 
 web admin https://covkab-admin.web.app
