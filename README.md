@@ -2,13 +2,14 @@
 
 Tracking covid 19 status specifically in specific Kabupaten
 
-web client => https://covkab-client.web.app
-web admin => https://covkab-admin.web.app
+web client https://covkab-client.web.app
+web admin https://covkab-admin.web.app
 
-panel credentials:
-	- username: root, password: root000011112222
-	- username: admin, password: admin000011112222
-	- username: user, password: user000011112222
+**panel credentials**
+
+username: root, password: root000011112222
+username: admin, password: admin000011112222
+username: user, password: user000011112222
 
 ** Screenshots **
 #### Desktop
