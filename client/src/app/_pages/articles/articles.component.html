@@ -1,0 +1,57 @@
+<section id="heading" class="mat-typography">
+  <div class="container">
+    <div
+      class="heading-section"
+      fxLayout="column"
+      fxLayoutAlign="center center"
+    >
+      <div [class.animated]="isHeading" [class.fadeInLeft]="isHeading">
+        <h1>
+          COVID-19 Articles
+        </h1>
+      </div>
+      <div [class.animated]="isSubheading" [class.fadeInRight]="isSubheading">
+        <h2>
+          Articles List for COVID-19 in North Buton
+        </h2>
+      </div>
+    </div>
+
+    <div class="main">
+
+      <!-- articles list ghost placeholder -->
+      <ng-container *ngIf="isLoading">
+        <app-art-list-ghost></app-art-list-ghost>
+      </ng-container>
+
+      <!-- main content -->
+      <div class="fx-grid" *ngIf="!isLoading">
+
+        <!-- blog card -->
+        <div
+          *ngFor="let item of articles"
+          class="blog_card"
+          (click)="showDetail(item?._id)"
+        >
+          <div class="card_image">
+            <img [src]="item?.image" alt="blog-image" />
+          </div>
+
+          <div class="card_content">
+            <div class="blog_title">
+              {{ item?.title }}
+            </div>
+
+            <div class="blog_meta">
+              <span>{{ item?.author?.name }}</span>
+              <span>{{ item?.createdAt }}</span>
+            </div>
+          </div>
+        </div>
+        <!-- end of blog card -->
+        
+      </div>
+    </div>
+
+  </div>
+</section>

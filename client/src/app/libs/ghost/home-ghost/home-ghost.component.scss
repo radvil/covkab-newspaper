@@ -1,0 +1,43 @@
+.ph-item {
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  background-color: #fafafa;
+
+  > * {
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  .empty {
+    background-color: #fafafa;
+  }
+
+  .small {
+    height: 15px;
+  }
+
+  .small,
+  .big {
+    border-radius: 20px;
+  }
+}
+.ph-row {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+
+  > div {
+    background-color: #e2e2e2;
+  }
+
+  &.center {
+    justify-content: center;
+  }
+}
+.ph-col-12 {
+  padding: 0;
+}
+.ph-picture {
+  height: 200px;
+}

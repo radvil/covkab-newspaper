@@ -1,0 +1,125 @@
+<div class="app-main__inner">
+  <app-page_title
+    icon="pe-7s-news-paper"
+    title="Articles"
+    subtitle="Tambahkan Artikel Baru"
+  ></app-page_title>
+
+  <div class="main card">
+    <div class="form_articles">
+      <!-- image hint -->
+      <div class="image_hint">
+        <div class="badge badge-warning">
+          Ukuran gambar maksimal = 2MB (2048kb)
+        </div>
+      </div>
+
+      <!-- preview -->
+      <div class="image_space" *ngIf="preview && preview !== null">
+        <img [src]="preview" (click)="fileInput.click()" alt="article image" />
+      </div>
+
+      <!-- upload button -->
+      <div *ngIf="!preview">
+        <button
+          mat-flat-button
+          color="accent"
+          (click)="fileInput.click()"
+          type="button"
+        >
+          Select photo
+        </button>
+      </div>
+
+      <!-- fileinput -->
+      <div class="form-group" style="display: none;">
+        <input
+          type="file"
+          (change)="onFileSelected($event)"
+          #fileInput
+          required
+        />
+      </div>
+
+      <!-- FORM STARTS -->
+      <form [formGroup]="form" (ngSubmit)="submitForm()">
+        <div class="input_space">
+          <!-- imageAlt field -->
+          <mat-form-field appearance="fill">
+            <mat-label>Alternative image link</mat-label>
+            <input
+              formControlName="imageAlt"
+              matInput
+              placeholder="Alternative link for image"
+            />
+            <mat-error *ngIf="form.get('imageAlt').hasError('maxlength')">
+                Max 255 karakter
+            </mat-error>
+          </mat-form-field>
+
+          <!-- title field -->
+          <mat-form-field appearance="fill">
+            <mat-label>Judul artikel</mat-label>
+            <input
+              formControlName="title"
+              matInput
+              placeholder="Judul artikel"
+            />
+            <mat-error *ngIf="form.get('title').hasError('required')"
+              >Tidak boleh kosong</mat-error
+            >
+            <mat-error *ngIf="form.get('title').hasError('minlength')"
+              >Min 5 karakter</mat-error
+            >
+            <mat-error *ngIf="form.get('title').hasError('maxlength')"
+              >Max 255 karakter</mat-error
+            >
+          </mat-form-field>
+
+          <!-- content field -->
+          <div class="content_field">
+            <quill-editor
+              formControlName="content"
+              [styles]="editor.style"
+              [modules]="editor.config"
+            ></quill-editor>
+          </div>
+
+          <!-- fileinput -->
+          <div style="display: none;">
+            <input type="text" formControlName="author" />
+          </div>
+
+          <!-- isPublished field -->
+          <div style="margin: 18px 0px;">
+            <mat-slide-toggle
+              formControlName="isPublished"
+              [checked]="isPublished === true"
+              (clicked)="isPublished = !isPublished"
+              >Publish artikel</mat-slide-toggle
+            >
+          </div>
+        </div>
+
+        <!-- buttons -->
+        <div class="button_space">
+          <button
+            [disabled]="form.invalid || form.disabled"
+            mat-raised-button
+            class="btn_submit"
+          >
+            Submit
+          </button>
+          <button
+            (click)="cancelSubmit()"
+            mat-stroked-button
+            type="button"
+            class="btn_cancel"
+          >
+            Cancel
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

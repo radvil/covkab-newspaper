@@ -1,0 +1,48 @@
+.main {
+  margin-bottom: 3rem;
+}
+
+table {
+  width: 100%;
+
+  // small device
+  @media (max-width: 777px) {
+    .pc {
+      display: none;
+    }
+  }
+}
+
+.giveMeEllipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  /* line-height: 2; */
+  /* max-height: 2 * 2; */
+}
+
+td.mat-cell,
+td.mat-footer-cell,
+th.mat-header-cell {
+  padding: 10px;
+}
+
+.status-cell {
+  padding-right: 10px;
+  padding-left: 10px;
+  text-align: center;
+}
+
+td.mat-cell:last-of-type,
+td.mat-footer-cell:last-of-type,
+th.mat-header-cell:last-of-type {
+  width: 10px;
+  padding-right: 5px;
+}
+
+.mat-menu-item {
+  padding: 5px;
+  line-height: 0px;
+}

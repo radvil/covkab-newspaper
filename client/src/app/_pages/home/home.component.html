@@ -1,0 +1,101 @@
+<!-- home ghost placeholder -->
+<ng-container *ngIf="isLoading">
+  <app-home-ghost></app-home-ghost>
+</ng-container>
+
+<!-- portfolio section -->
+<app-slides></app-slides>
+
+<!-- local statistics section -->
+<section
+  id="local-stats"
+  class="mat-typography"
+  [ngStyle.lt-md]="{ 'margin-top': '30px', 'margin-bottom': '30px' }"
+>
+  <div class="container">
+    <div
+      class="stats_section stats_heading"
+      fxLayout="column"
+      fxLayoutAlign="center center"
+    >
+      <div>
+        <h2 [ngStyle.lt-md]="{ 'margin-bottom': '15px' }">Case Statistics</h2>
+      </div>
+      <div>
+        <h3
+          [ngStyle.xs]="{ 'font-size': '18px' }"
+          [ngStyle.sm]="{ 'font-size': '22px' }"
+        >
+          Current COVID-19 Statistics in North Buton
+        </h3>
+      </div>
+    </div>
+
+    <div class="fx-row">
+      <div class="box">
+        <div class="stat_number">{{ stat?.totalPositive }}</div>
+        <div class="stat_text">Positives</div>
+      </div>
+      <div class="box">
+        <div class="stat_number">{{ stat?.totalODP }}</div>
+        <div class="stat_text">ODP</div>
+      </div>
+      <div class="box">
+        <div class="stat_number">{{ stat?.totalPDP }}</div>
+        <div class="stat_text">PDP</div>
+      </div>
+      <div class="box">
+        <div class="stat_number">{{ stat?.totalOTG }}</div>
+        <div class="stat_text">OTG</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- country statistics section -->
+<section
+  id="country-stats"
+  class="mat-typography"
+  [ngStyle.lt-md]="{ 'margin-top': '30px', 'margin-bottom': '30px' }"
+>
+  <div class="container">
+    <div
+      class="stats_section stats_heading"
+      fxLayout="column"
+      fxLayoutAlign="center center"
+    >
+      <div>
+        <h2 [ngStyle.lt-md]="{ 'margin-bottom': '15px' }">Statistik Indonesia</h2>
+      </div>
+      <div>
+        <h3
+          [ngStyle.xs]="{ 'font-size': '18px' }"
+          [ngStyle.sm]="{ 'font-size': '22px' }"
+        >
+          Current COVID-19 case Statistic around Indonesia
+        </h3>
+      </div>
+    </div>
+
+    <div class="fx-row">
+      <div class="box --id">
+        <div class="stat_number">{{ totalDeath }}</div>
+        <div class="stat_text">Deaths</div>
+      </div>
+      <div class="box --id">
+        <div class="stat_number">{{ totalRecovered }}</div>
+        <div class="stat_text">Recovered</div>
+      </div>
+      <div class="box --id">
+        <div class="stat_number">{{ totalOnRecovery }}</div>
+        <div class="stat_text">Under Treatment</div>
+      </div>
+      <div class="box --id">
+        <div class="stat_number">{{ totalCases }}</div>
+        <div class="stat_text">Total Cases</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-art_cards></app-art_cards>

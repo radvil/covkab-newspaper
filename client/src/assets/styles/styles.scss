@@ -1,0 +1,163 @@
+@import '~@angular/material/theming';
+@import '~typeface-roboto/index.css';
+@import '~typeface-ubuntu/index.css';
+@import '~placeholder-loading/src/scss/placeholder-loading';
+@import '~material-design-icons/iconfont/material-icons.css';
+@import 'nglp.scss';
+@import 'animation/nglp-animations.scss';
+
+/* ------ Global style ------- */
+html,
+body {
+	height: 100%;
+	margin: 0;
+
+	::-webkit-scrollbar {
+    width: 0.5rem;
+    border-radius: 5px;
+	}
+	::-webkit-scrollbar-track {
+		background-color: #ffffff;
+	}
+	::-webkit-scrollbar-thumb {
+		background-color: #222222;
+		// background-color: #0091ea;
+	}
+}
+.mat-drawer-container {
+    background-color: #ffffff !important;
+}
+.mat-list-base {
+    padding-top: 0px !important;
+}
+p {
+    line-height: 1.8rem;
+}
+.cdk-overlay-pane {
+  max-width: 90vw !important;
+}
+.mat-dialog-container {
+  padding: 18px !important;
+  border-radius: 15px !important;
+}
+.mat-form-field-appearance-fill .mat-form-field-flex {
+	border-radius: 20px !important;
+}
+.mat-form-field-underline {
+  width: unset !important;
+}
+#content {
+  img {
+    max-width: 100% !important;
+  }
+}
+
+/* ------ scroll off -------- */
+.scrollOff{
+	overflow: hidden !important;
+}
+
+/* ------ section -------- */
+section{
+	margin-top: 99px;
+	margin-bottom: 99px;
+}
+
+/* ------ icons -------- */
+.material-icons {
+  color: mat-color($nglp-accent, 700);
+}
+
+.text-muted{
+  color: mat-color($nglp-accent, A700);
+}
+
+/* ------ navigation -------- */
+.navigation-toolbar {
+  background-color: mat-color($nglp-primary);
+}
+
+/* ------ mobile logo -------- */
+#mobilelogo{
+  margin-top: 56px;
+}
+
+/* ------ about hover effect -------- */
+.about-hover-effect{
+  @include mat-elevation-transition;
+  @include mat-elevation(8);
+}
+
+.about-hover-effect .mat-card{
+  background-color: mat-color($nglp-accent, 100);
+}
+
+.about-hover-effect i{
+  color: mat-color($nglp-accent, A700);
+}
+
+/* --------------- app loader ------------------*/
+.loading_space {
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Ubuntu', 'Roboto';
+}
+
+.loading {
+  width: 150px;
+  height: 150px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border-top: 10px solid #05b3d1;
+  position: relative;
+  animation: a1 2s linear infinite;
+}
+
+.loading::before,
+.loading::after {
+  content: '';
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 0;
+  top: -10px;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.loading::before {
+  border-top: 10px solid #075dbf;
+  transform: rotate(120deg);
+}
+
+.loading::after {
+  border-top: 10px solid #0719bf;
+  transform: rotate(240deg);
+}
+
+.loading span {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  color: #333333;
+  line-height: 150px;
+  animation: a2 2s linear infinite;
+}
+
+@keyframes a1 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes a2 {
+  to {
+    transform: rotate(-360deg);
+  }
+}

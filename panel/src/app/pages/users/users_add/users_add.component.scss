@@ -1,0 +1,92 @@
+.app-page-title {
+  padding: 30px 30px 10px !important;
+}
+
+.main {
+  margin-bottom: 50px;
+
+  @media (max-width: 777px) {
+    padding: 10px 20px;
+  }
+}
+
+.btn_delete {
+  height: 50px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-bottom: 20px;
+
+  button {
+    background-color: #ca2020;
+    color: white;
+    border-radius: 0;
+    margin-right: 10px;
+
+    &:nth-child(2) {
+      background-color: #0098d0;
+    }
+
+    &:hover {
+      background-color: black;
+    }
+  }
+}
+
+.form_space {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 777px) {
+    flex-direction: column;
+  }
+}
+
+.fx-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (max-width: 777px) {
+    flex-direction: column;
+  }
+}
+
+.fx-row > mat-form-field {
+  flex-basis: 48%;
+}
+
+form {
+  flex-basis: 100%;
+}
+
+.input_space {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  button {
+    flex-basis: 45%;
+    height: 50px;
+    border-radius: 0;
+
+    &.btn_submit {
+      background-color: #0098d0;
+      color: white;
+
+      &:disabled {
+        background-color: #cccccc;
+      }
+    }
+
+    &.btn_cancel {
+      background-color: white;
+      color: red;
+    }
+
+    @media (max-width: 777px) {
+      flex-basis: unset;
+      margin-bottom: 10px;
+    }
+  }
+}

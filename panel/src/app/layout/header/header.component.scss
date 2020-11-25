@@ -1,0 +1,27 @@
+ul.nav {
+  display: flex !important;
+}
+.app-header.header-shadow {
+  box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.nav-item .label {
+  @media (max-width: 777px) {
+    display: none;
+  }
+}
+
+.user_menu {
+  width: 45px;
+  height: 45px;
+  padding: 3px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  
+  img {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+  }
+}

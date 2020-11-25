@@ -1,0 +1,9 @@
+:host {
+  flex: 2;
+  mat-form-field {
+    width: 100%;
+  }
+  @media (max-width: 777px) {
+    margin: 1rem 0 0;
+  }
+}

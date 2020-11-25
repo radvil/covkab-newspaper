@@ -1,0 +1,69 @@
+.app-page-title {
+  padding: 30px 30px 10px !important;
+}
+
+.main {
+  margin-bottom: 50px;
+}
+
+.image_space {
+  margin-bottom: 20px;
+  
+  img {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0px 3px 6px 0px #0000005c;
+    }
+  }
+}
+
+.input_space {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.button_space {
+  margin-top: 20px;
+}
+
+button {
+  border-radius: 0;
+  height: 50px;
+  width: 25%;
+  margin: 0 10px 10px 0;
+
+  &.btn_submit {
+    background-color: #0098d0;
+    color: white;
+    &:hover {
+      filter: opacity(0.9);
+    }
+  }
+
+  &.btn_cancel {
+    background-color: white;
+    color: red;
+  }
+}
+
+// small device
+@media (max-width: 777px) {
+  .card {
+    padding: 20px !important;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .button_space {
+    display: flex;
+    flex-direction: column;
+  }
+}

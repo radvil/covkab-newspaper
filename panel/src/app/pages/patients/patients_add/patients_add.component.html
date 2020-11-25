@@ -1,0 +1,157 @@
+<div class="app-main__inner">
+  <app-page_title
+    icon="pe-7s-id"
+    title="Patients"
+    [subtitle]="pageSubtitle"
+  ></app-page_title>
+
+  <div class="main card" [ngClass]="idParam ? 'pt-4' : null">
+    <div class="btn_delete" matTooltip="Hapus Data" *ngIf="idParam">
+      <button mat-flat-button (click)="deletePatient(patient?._id)">
+        <mat-icon>delete</mat-icon>&nbsp;Delete
+      </button>
+    </div>
+    <div class="form_patient">
+      <div class="photo_space" *ngIf="preview && preview !== null">
+        <!-- image hint -->
+        <div class="image_hint">
+          <div class="badge badge-warning">
+            Ukuran maksimal = 1MB (1024kb)
+          </div>
+        </div>
+
+        <div class="preview" (click)="fileInput.click()">
+          <img [src]="preview" matTooltip="Change photo" alt="preview" />
+        </div>
+      </div>
+
+      <form [formGroup]="form" (ngSubmit)="submitForm()">
+        <div class="input_space">
+          <!-- name field -->
+          <mat-form-field>
+            <mat-label>Nama</mat-label>
+            <input formControlName="name" matInput placeholder="Name" />
+            <mat-error *ngIf="form.get('name').hasError('required')"
+              >Nama diperlukan</mat-error
+            >
+          </mat-form-field>
+
+          <div class="fx-row">
+            <!-- status field -->
+            <mat-form-field>
+              <mat-label>Status</mat-label>
+              <mat-select formControlName="status">
+                <mat-option
+                  *ngFor="let status of statusList"
+                  value="{{ status }}"
+                  >{{ status | uppercase }}</mat-option
+                >
+              </mat-select>
+              <mat-error *ngIf="form.get('status').hasError('required')"
+                >Status diperlukan</mat-error
+              >
+            </mat-form-field>
+
+            <!-- gender field -->
+            <mat-form-field>
+              <mat-label>Jenis kelamin</mat-label>
+              <mat-select formControlName="gender">
+                <mat-option
+                  *ngFor="let gender of genderList"
+                  value="{{ gender }}"
+                  >{{ gender | uppercase }}</mat-option
+                >
+              </mat-select>
+            </mat-form-field>
+          </div>
+
+          <div class="fx-row">
+            <!-- nik field -->
+            <mat-form-field>
+              <mat-label>No. NIK</mat-label>
+              <input formControlName="nik" matInput placeholder="NIK" />
+              <mat-error *ngIf="form.get('nik').hasError('maxlength')"
+                >Maksimal 16 karakter</mat-error
+              >
+            </mat-form-field>
+
+            <!-- phone field -->
+            <mat-form-field>
+              <mat-label>No. HP</mat-label>
+              <input formControlName="phone" matInput placeholder="Nomor HP" />
+            </mat-form-field>
+          </div>
+
+          <div class="fx-row">
+            <!-- residence field -->
+            <mat-form-field>
+              <mat-label>Kecamatan</mat-label>
+              <mat-select formControlName="residence">
+                <mat-option *ngFor="let rs of residenceList" value="{{ rs }}">{{
+                  rs | uppercase
+                }}</mat-option>
+              </mat-select>
+            </mat-form-field>
+
+            <!-- address field -->
+            <mat-form-field>
+              <mat-label>Alamat jalan</mat-label>
+              <input matInput formControlName="address" placeholder="Jalan" />
+            </mat-form-field>
+          </div>
+
+          <!-- detail field -->
+          <mat-form-field appearance="fill">
+            <mat-label>Keterangan lanjutan</mat-label>
+            <textarea
+              matInput
+              formControlName="detail"
+              cdkAutoSizeMinRows="1"
+              cdkAutoSizeMaxRows="10"
+              placeholder="Keterangan"
+              type="text"
+              style="min-height: 100px;"
+            ></textarea>
+          </mat-form-field>
+
+          <!-- Product hasMudik Status -->
+          <mat-slide-toggle
+            formControlName="hasMudik"
+            (check)="hasMudik = !hasMudik"
+            [checked]="hasMudik === true"
+          >
+            Pemudik
+          </mat-slide-toggle>
+
+          <mat-form-field style="display: none;">
+            <input matInput type="text" formControlName="author" />
+          </mat-form-field>
+
+          <input
+            #fileInput
+            type="file"
+            (change)="onFileSelected($event)"
+            style="visibility: hidden;"
+          />
+
+          <div class="fx-row">
+            <button
+              [disabled]="form.invalid || form.disabled"
+              mat-raised-button
+              class="btn_submit"
+            >
+              Submit
+            </button>
+            <button
+              mat-stroked-button
+              class="btn_cancel"
+              (click)="cancelSubmit()"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,79 @@
+<div class="app-main__inner">
+  <app-page_title
+    icon="pe-7s-users"
+    title="Manage Users"
+    subtitle="Kumpulan User Terdaftar"
+    (onIconClicked)="addUser()"
+  ></app-page_title>
+
+  <!-- no item placeholder -->
+  <div class="ph-noitem" *ngIf="!data_source">Item kosong</div>
+
+  <div class="main">
+    <!-- TABLE OF USERS -->
+    <table
+      mat-table
+      [dataSource]="data_source"
+      matSort
+      class="table-striped table-hover"
+    >
+      <!-- nik field -->
+      <ng-container matColumnDef="nik">
+        <th mat-header-cell *matHeaderCellDef>
+          User NIK
+        </th>
+        <td mat-cell *matCellDef="let row">{{ row.nik }}</td>
+      </ng-container>
+
+      <!-- name field -->
+      <ng-container matColumnDef="name">
+        <th mat-header-cell mat-sort-header *matHeaderCellDef>
+          Nama
+        </th>
+        <td mat-cell *matCellDef="let row">{{ row.name }}</td>
+      </ng-container>
+
+      <!-- role field -->
+      <ng-container matColumnDef="role">
+        <th mat-header-cell mat-sort-header *matHeaderCellDef>
+          User Role
+        </th>
+        <td mat-cell *matCellDef="let row; let i = index" class="status-cell">
+          <div *ngIf="row.role === 'admin'" class="badge badge-dark">
+            Admin
+          </div>
+          <div *ngIf="row.role === 'root'" class="badge badge-danger">
+            Root
+          </div>
+        </td>
+      </ng-container>
+
+      <!-- action field -->
+      <ng-container matColumnDef="action">
+        <th mat-header-cell *matHeaderCellDef>
+          ###
+        </th>
+        <td mat-cell *matCellDef="let row">
+          <app-menu_actions
+            [selectedId]="row._id"
+            (onClickedShow)="showUser($event)"
+            [canEdit]="true"
+            (onClickedEdit)="editUser($event)"
+            [canDelete]="true"
+            (onClickedDelete)="deleteUser($event)"
+          ></app-menu_actions>
+        </td>
+      </ng-container>
+
+      <!-- displayedColumns -->
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+
+    <!-- paginator -->
+    <mat-paginator
+      [pageSizeOptions]="[5, 10]"
+      showFirstLastButtons
+    ></mat-paginator>
+  </div>
+</div>

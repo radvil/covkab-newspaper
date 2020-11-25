@@ -1,0 +1,63 @@
+<form [formGroup]="form" class="formwidth" (ngSubmit)="onSubmit()">
+	<div class="dialog-title">Ask for help or suggestion</div>
+	<div class="form_space">
+    
+		<mat-form-field appearance="outline" color="accent">
+			<mat-label>Sender Name </mat-label>
+			<input
+				matInput
+				placeholder="Enter your name"
+				formControlName="name"
+			/>
+			<mat-error *ngIf="form.controls.name.hasError('required')">
+				Name is required!
+			</mat-error>
+		</mat-form-field>
+
+		<mat-form-field appearance="outline" color="accent">
+			<mat-label>Phone Number </mat-label>
+			<input
+				matInput
+				placeholder="Enter your phone number"
+				formControlName="phone"
+			/>
+			<mat-error *ngIf="form.controls.phone.hasError('required')">
+				Phone number is required!
+			</mat-error>
+		</mat-form-field>
+
+		<mat-form-field appearance="fill" color="accent">
+			<mat-label>Message </mat-label>
+			<textarea
+				matInput
+				placeholder="Enter your message"
+				formControlName="message"
+				style="min-height: 77px"
+			></textarea>
+			<mat-error *ngIf="form.controls.message.hasError('required')">
+				Message is required!
+			</mat-error>
+		</mat-form-field>
+
+		<div class="dialog-action">
+			<button
+				[disabled]="form.invalid || form.disabled"
+				class="left-button"
+				mat-fab
+				color="primary"
+				type="submit"
+			>
+				<mat-icon>done</mat-icon>
+			</button>
+			<button
+				class="right-button"
+				mat-fab
+				type="button"
+				color="primary"
+				(click)="onCancel()"
+			>
+				<mat-icon>clear</mat-icon>
+			</button>
+		</div>
+	</div>
+</form>

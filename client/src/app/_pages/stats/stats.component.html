@@ -1,0 +1,247 @@
+<section
+  id="heading"
+  class="mat-typography"
+  [ngStyle.lt-md]="{ 'margin-top': '30px', 'margin-bottom': '30px' }"
+>
+  <div class="container">
+    <div
+      class="heading-section"
+      fxLayout="column"
+      fxLayoutAlign="center center"
+    >
+      <div [class.animated]="isHeading" [class.fadeInLeft]="isHeading">
+        <h1
+          [ngStyle.xs]="{ 'font-size': '32px' }"
+          [ngStyle.sm]="{ 'font-size': '42px' }"
+        >
+          CovId-19
+        </h1>
+      </div>
+      <div [class.animated]="isSubheading" [class.fadeInRight]="isSubheading">
+        <h2
+          [ngStyle.xs]="{ 'font-size': '18px' }"
+          [ngStyle.sm]="{ 'font-size': '22px' }"
+        >
+          Current COVID-19 Status in Indonesia
+        </h2>
+      </div>
+    </div>
+
+    <div class="tab_section">
+      <mat-tab-group mat-align-tabs="center" color="accent">
+        <!-- recent update -->
+        <mat-tab label="Daily Status">
+          <div class="container">
+            <!-- hari ke -->
+            <div class="x-row card">
+              <div class="x-col-8 ml-2">
+                Day
+              </div>
+              <div class="x-col-4 ml-2">
+                {{ dailyStat?.harike }}
+              </div>
+            </div>
+
+            <!-- last update -->
+            <div class="x-row card">
+              <div class="x-col-8 ml-2">
+                Last Update
+              </div>
+              <div class="x-col-4 ml-2">
+                {{ dailyStat?.tanggal | date }}
+              </div>
+            </div>
+
+            <!-- total checked -->
+            <div class="x-row card">
+              <div class="x-col-8 ml-2">
+                Total Case
+              </div>
+              <div class="x-col-4 ml-2">
+                {{ dailyStat?.jumlahSpesimenDiperiksa }}
+              </div>
+            </div>
+
+            <!-- total positif -->
+            <div class="x-row card">
+              <div class="x-col-8 ml-2">
+                Total Positive Cases
+              </div>
+              <div class="x-col-4 ml-2">
+                {{ dailyStat?.jumlahKasusKumulatif }}
+              </div>
+            </div>
+
+            <!-- total negatif -->
+            <div class="x-row card">
+              <div class="x-col-8 ml-2">
+                Total Negative Cases
+              </div>
+              <div class="x-col-4 ml-2">
+                {{ dailyStat?.jumlahNegatif }}
+              </div>
+            </div>
+
+            <!-- total healed -->
+            <div class="x-row card">
+              <div class="x-col-8 ml-2">
+                Total Recovered
+              </div>
+              <div class="x-col-4 ml-2">
+                {{ dailyStat?.jumlahPasienSembuh }}
+              </div>
+            </div>
+
+            <!-- total death -->
+            <div class="x-row card">
+              <div class="x-col-8 ml-2">
+                Total Deaths
+              </div>
+              <div class="x-col-4 ml-2">
+                {{ dailyStat?.jumlahPasienMeninggal }}
+              </div>
+            </div>
+
+            <!-- percent on healed -->
+            <div class="x-row card">
+              <div class="x-col-8 ml-2">
+                Recovered Percentage
+              </div>
+              <div class="x-col-4 ml-2">
+                {{ dailyStat?.percentHealed }} %
+              </div>
+            </div>
+
+            <!-- percent on death -->
+            <div class="x-row card">
+              <div class="x-col-8 ml-2">
+                Death Percentage
+              </div>
+              <div class="x-col-4 ml-2">
+                {{ dailyStat?.percentDeath }} %
+              </div>
+            </div>
+
+            <!-- total new daily positif -->
+            <div class="x-row card">
+              <div class="x-col-8 ml-2">
+                New Positive Cases
+              </div>
+              <div class="x-col-4 ml-2">
+                + {{ dailyStat?.jumlahKasusBaruperHari }}
+              </div>
+            </div>
+
+            <!-- total new daily healed -->
+            <div class="x-row card">
+              <div class="x-col-8 ml-2">
+                New Recovered Cases
+              </div>
+              <div class="x-col-4 ml-2">
+                + {{ dailyStat?.jumlahKasusSembuhperHari }}
+              </div>
+            </div>
+
+            <!-- total new daily death -->
+            <div class="x-row card">
+              <div class="x-col-8 ml-2">
+                New Death Case
+              </div>
+              <div class="x-col-4 ml-2">
+                + {{ dailyStat?.jumlahKasusMeninggalperHari }}
+              </div>
+            </div>
+
+            <!-- total new daily on recovery -->
+            <div class="x-row card">
+              <div class="x-col-8 ml-2">
+                New Under Treatment Case
+              </div>
+              <div class="x-col-4 ml-2">
+                + {{ dailyStat?.jumlahKasusDirawatperHari }}
+              </div>
+            </div>
+
+          </div>
+        </mat-tab>
+
+        <!-- update per prov -->
+        <mat-tab label="Province Status">
+          <div class="container">
+            <!-- finder input -->
+            <div class="finder">
+              <mat-form-field color="accent" appearance="outline">
+                <mat-label>Search province</mat-label>
+                <input
+                  matInput
+                  (keyup)="applyFilterProvince($event.target.value)"
+                  placeholder="Search..."
+                />
+                <mat-icon matSuffix>search</mat-icon>
+              </mat-form-field>
+            </div>
+
+            <!-- TABLE OF DOCS -->
+            <table
+              mat-table
+              [dataSource]="provDataSource"
+              matSort
+              class="table-striped table-hover"
+            >
+              <!-- kodeProvi field -->
+              <ng-container matColumnDef="kodeProvi">
+                <th
+                  class="pc"
+                  mat-header-cell
+                  mat-sort-header
+                  *matHeaderCellDef
+                >
+                  Code
+                </th>
+                <td class="pc" mat-cell *matCellDef="let row">
+                  {{ row.kodeProvi }}
+                </td>
+              </ng-container>
+
+              <!-- provinsi field -->
+              <ng-container matColumnDef="provinsi">
+                <th mat-header-cell mat-sort-header *matHeaderCellDef>
+                  Provinsi
+                </th>
+                <td mat-cell *matCellDef="let row">{{ row.provinsi }}</td>
+              </ng-container>
+
+              <!-- kasusPosi field -->
+              <ng-container matColumnDef="kasusPosi">
+                <th mat-header-cell mat-sort-header *matHeaderCellDef>
+                  Positive
+                </th>
+                <td mat-cell *matCellDef="let row">{{ row.kasusPosi }}</td>
+              </ng-container>
+
+              <!-- kasusSemb field -->
+              <ng-container matColumnDef="kasusSemb">
+                <th mat-header-cell mat-sort-header *matHeaderCellDef>
+                  Recovered
+                </th>
+                <td mat-cell *matCellDef="let row">{{ row.kasusSemb }}</td>
+              </ng-container>
+
+              <!-- kasusMeni field -->
+              <ng-container matColumnDef="kasusMeni">
+                <th mat-header-cell mat-sort-header *matHeaderCellDef>
+                  Deaths
+                </th>
+                <td mat-cell *matCellDef="let row">{{ row.kasusMeni }}</td>
+              </ng-container>
+
+              <!-- displayedColumns -->
+              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+            </table>
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+</section>

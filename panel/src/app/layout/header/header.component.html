@@ -1,0 +1,72 @@
+<div
+  class="app-header header-text-dark"
+  [ngClass]="
+    (bgClass$ | async) + ((isFixedHeader$ | async) ? ' header-shadow' : '')
+  "
+>
+  <div class="app-header__logo" *ngIf="currentUser$ | async">
+    <div class="logo-src"></div>
+    <div class="header__pane ml-auto">
+      <div>
+        <button
+          #menuIcon
+          type="button"
+          mat-icon-button
+          class="close-sidebar-btn"
+          data-class="closed-sidebar"
+        >
+          <mat-icon>menu</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="app-header__mobile-menu" *ngIf="currentUser$ | async">
+    <div>
+      <button type="button" mat-icon-button class="mobile-toggle-nav">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+  </div>
+  <div class="app-header__content">
+    <div class="app-header-left">
+      <ul class="header-menu nav">
+        <li class="nav-item">
+          <a href="#" target="_blank" class="nav-link">
+            <i class="nav-link-icon fa fa-home"></i>
+            <span class="label">BERANDA</span>
+          </a>
+        </li>
+        <li class="nav-item" *ngIf="!currentUser$ | async">
+          <a routerLink="/login" class="nav-link">
+            <i class="nav-link-icon fa fa-code"></i>
+            LOGIN
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="app-header-right" *ngIf="currentUser$ | async as user">
+      <div class="user_menu" [matMenuTriggerFor]="menu">
+        <img src="assets/images/portraits/face.jpg" alt="user photo" />
+      </div>
+
+      <mat-menu #menu="matMenu">
+        <ng-template matMenuContent>
+          <button mat-menu-item (click)="showProfile(user._id)">
+            <mat-icon>account_circle</mat-icon>
+            <span>Lihat Profile</span>
+          </button>
+
+          <button mat-menu-item (click)="openThemeDialog()">
+            <mat-icon>palette</mat-icon>
+            <span>Ganti Tema</span>
+          </button>
+
+          <button mat-menu-item (click)="logoutUser()">
+            <mat-icon>poweroff</mat-icon>
+            <span>Logout</span>
+          </button>
+        </ng-template>
+      </mat-menu>
+    </div>
+  </div>
+</div>

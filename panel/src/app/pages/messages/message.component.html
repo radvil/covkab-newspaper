@@ -1,0 +1,35 @@
+<div class="header">
+  <div class="title">
+    <span>Message Detail</span>
+  </div>
+  <div class="close">
+    <button (click)="onClose()" mat-flat-button type="button">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+</div>
+
+<div class="content">
+  <p>
+    {{ data?.message }}
+  </p>
+</div>
+
+<hr />
+
+<div class="footer">
+  <ul>
+    <li class="item_list">
+      <div class="label">Nama Pengirim</div>
+      <div class="value">{{ data?.name }}</div>
+    </li>
+    <li class="item_list">
+      <div class="label">Nomor HP</div>
+      <div class="value">{{ data?.phone }}</div>
+    </li>
+    <li class="item_list">
+      <div class="label">Tanggal Terkirim</div>
+      <div class="value">{{ data?.createdAt }}</div>
+    </li>
+  </ul>
+</div>

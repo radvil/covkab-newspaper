@@ -1,0 +1,87 @@
+<div class="app-main__inner">
+  <app-page_title
+    icon="pe-7s-call"
+    title="Contacts"
+    subtitle="Kontak Yang Bisa Dihubungi"
+  ></app-page_title>
+
+  <!-- CONTENT STARTS HERE -->
+  <mat-card style="margin-bottom: 30px;">
+    <ng-container>
+      <h5 class="form-title">Edit Kontak</h5>
+      <form [formGroup]="form" (ngSubmit)="submitForm()">
+        <div class="row">
+          <mat-form-field class="col-12" appearance="fill">
+            <mat-label>Post intro</mat-label>
+            <textarea
+              formControlName="intro"
+              style="height: 100px;"
+              type="text"
+              matInput
+              placeholder="Post Intro"
+            ></textarea>
+          </mat-form-field>
+
+          <mat-form-field class="col-12" appearance="fill">
+            <mat-label>Alamat</mat-label>
+            <input
+              formControlName="address"
+              type="text"
+              matInput
+              placeholder="Alamat"
+            />
+            <mat-error>This field is required</mat-error>
+          </mat-form-field>
+
+          <mat-form-field class="col-12" appearance="fill">
+            <mat-label>Email</mat-label>
+            <input
+              formControlName="email"
+              type="email"
+              matInput
+              placeholder="Email address"
+            />
+            <mat-error>This field is required</mat-error>
+          </mat-form-field>
+
+          <mat-form-field class="col-12" appearance="fill">
+            <mat-label>Nomor telepon</mat-label>
+            <input
+              formControlName="phone"
+              type="text"
+              matInput
+              placeholder="Nomor telpon"
+            />
+            <mat-error>This field is required</mat-error>
+          </mat-form-field>
+
+          <!-- BUTTONS -->
+          <div class="col-6">
+            <br />
+            <button
+              style="width: 100%; height: 4em;"
+              type="submit"
+              mat-raised-button
+              color="accent"
+              [disabled]="form.invalid"
+            >
+              Submit update
+            </button>
+          </div>
+          <div class="col-6">
+            <br />
+            <button
+              (click)="cancelSubmit()"
+              style="width: 100%; height: 4em;"
+              type="button"
+              mat-stroked-button
+              color="warn"
+            >
+              Cancel Submit
+            </button>
+          </div>
+        </div>
+      </form>
+    </ng-container>
+  </mat-card>
+</div>

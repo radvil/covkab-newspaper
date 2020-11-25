@@ -1,0 +1,107 @@
+.window_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.window_header {
+  background-color: #eeeeee;
+  margin: -25px -25px 0 -25px;
+  display: flex;
+  flex-direction: row;
+  height: 3rem;
+  .window_title {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    padding: 0 25px;
+    font-weight: 500;
+    font-family: Ubuntu;
+    @media (max-width: 777px) {
+      font-size: 18px;
+      padding: 0 13px;
+    }
+  }
+  .spacer {
+    flex: 1 0 auto;
+  }
+  .window_button {
+    .mat-flat-button {
+      height: 100%;
+      border-radius: 0px;
+      background-color: #eeeeee;
+      color: black;
+      &:hover {
+        background-color: red;
+      }
+    }
+  }
+}
+mat-dialog-content {
+  @media (max-width: 777px) {
+    padding: 0 13px !important;
+  }
+}
+.window_content {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  @media (max-width: 777px) {
+    margin-top: 13px;
+    margin-bottom: 13px;
+  }
+}
+section {
+  margin: 20px 0;
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+    
+    li {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      cursor: pointer;
+
+      &.active {
+        border: 10px solid #d2d2d2;
+      }
+
+      &.header-text-light {
+        background-color: #eeeeee;
+      }
+
+      &.header-text-dark {
+        background-color: black;
+      }
+
+      @media(max-width: 777px) {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+}
+section.slider {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+.window_actions {
+  margin: 25px 0;
+  display: flex;
+  button {
+    margin-right: 25px;
+    border-radius: 0;
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+  @media (max-width: 777px) {
+    margin: 13px -13px 0;
+  }
+}

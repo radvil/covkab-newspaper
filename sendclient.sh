@@ -1,0 +1,1 @@
+rsync -a ./client/dist/cvd-landing/ root@35.187.237.14:/var/www/covid19.kolakatimurkab.go.id/ --verbose; ssh root@35.187.237.14

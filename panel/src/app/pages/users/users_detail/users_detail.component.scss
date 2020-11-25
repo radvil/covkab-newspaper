@@ -1,0 +1,79 @@
+.app-page-title {
+  padding: 30px 30px 10px !important;
+}
+
+.main {
+  margin-bottom: 50px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 0;
+}
+
+.btn_edit {
+  height: 50px;
+  display: flex;
+  align-items: center;
+
+  button {
+    border-radius: 0;
+    background-color: #0c8ce6;
+    color: white;
+    margin-right: 20px;
+
+    &:nth-child(2) {
+      background-color: #c41515;
+      color: white;
+    }
+
+    &:hover {
+      background-color: black;
+    }
+
+    mat-icon {
+      color: white;
+    }
+  }
+}
+
+.user_profile {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail_space {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 1rem;
+
+  .title {
+    flex-basis: 36%;
+  }
+
+  .value {
+    flex-basis: 55%;
+  }
+}
+
+.detail_row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+
+  .title {
+    font-weight: 600;
+  }
+}
+
+// small device
+@media (max-width: 777px) {
+  .user_profile {
+    flex-direction: column;
+  }
+  .photo_space {
+    margin-bottom: 20px;
+  }
+}

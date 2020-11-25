@@ -1,0 +1,40 @@
+<footer class="footer-distributed">
+  <div class="footer-left">
+    <div class="footer_logo">
+      <img src="assets/logo-black.png" alt="footer-logo" />
+    </div>
+
+    <p class="footer-links">
+      <a routerLink="home">Home</a>
+      ·
+      <a routerLink="articles">Articles</a>
+      ·
+      <a routerLink="about">About</a>
+    </p>
+
+    <p class="footer-company-name">
+      Covkab Web Development &copy; {{ currentYear }}
+    </p>
+  </div>
+
+  <div *ngIf="contact$ | async as contact" class="footer-center">
+    <div>
+      <mat-icon>location_on</mat-icon>
+      <p>{{ contact?.address }}</p>
+    </div>
+
+    <div>
+      <mat-icon>phone</mat-icon>
+      <p>{{ contact?.phone }}</p>
+    </div>
+
+    <div>
+      <mat-icon>email</mat-icon>
+      <p>
+        <a href="#"
+          ><span class="__cf_email__">{{ contact?.email }}</span></a
+        >
+      </p>
+    </div>
+  </div>
+</footer>

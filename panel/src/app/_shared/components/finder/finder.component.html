@@ -1,0 +1,12 @@
+<!-- finder input -->
+<div class="finder">
+  <mat-form-field>
+    <mat-label>Pencarian</mat-label>
+    <input
+      matInput
+      (keyup)="findData($event.target.value)"
+      placeholder="Cari..."
+    />
+    <mat-icon matSuffix>search</mat-icon>
+  </mat-form-field>
+</div>

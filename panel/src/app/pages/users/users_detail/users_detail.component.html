@@ -1,0 +1,79 @@
+<div class="app-main__inner">
+  <app-page_title
+    icon="pe-7s-users"
+    title="Manage Users"
+    subtitle="Detail User"
+  ></app-page_title>
+
+  <div class="main card">
+    <div class="user_profile">
+      <!-- detail space -->
+      <div class="detail_space">
+        <div class="detail_row">
+          <div class="title">Nama</div>
+          <div class="value">{{ user?.name }}</div>
+        </div>
+
+        <div class="detail_row">
+          <div class="title">NIK</div>
+          <div class="value">{{ user?.nik }}</div>
+        </div>
+
+        <div class="detail_row">
+          <div class="title">Nomor HP</div>
+          <div class="value">{{ user?.phone }}</div>
+        </div>
+
+        <div class="detail_row">
+          <div class="title">Role</div>
+          <div class="value">{{ user?.role }}</div>
+        </div>
+
+        <div class="detail_row">
+          <div class="title">Kecamatan</div>
+          <div class="value">{{ user?.residence }}</div>
+        </div>
+
+        <div class="detail_row">
+          <div class="title">Alamat Jalan</div>
+          <div class="value">{{ user?.address }}</div>
+        </div>
+
+        <div class="detail_row">
+          <div class="title">Sejak</div>
+          <div class="value">{{ user?.createdAt }}</div>
+        </div>
+
+        <div class="detail_row">
+          <div class="title">Last updated</div>
+          <div class="value">{{ user?.updatedAt }}</div>
+        </div>
+
+        <div class="detail_row">
+          <div class="title">Last login</div>
+          <div class="value">{{ user?.lastLogin }}</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="btn_edit">
+      <button
+        (click)="editUser()"
+        type="button"
+        mat-flat-button
+        matTooltip="Edit data"
+      >
+        <mat-icon>edit</mat-icon>&nbsp;Edit Data
+      </button>
+
+      <button
+        (click)="deleteUser(user?._id)"
+        type="button"
+        mat-flat-button
+        matTooltip="Delete data"
+      >
+        <mat-icon>delete</mat-icon>&nbsp;Delete Data
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+<section
+  id="artcle-detail"
+  [ngStyle.lt-md]="{ 'margin-top': '50px', 'margin-bottom': '50px' }"
+>
+  <div class="main card">
+
+    <!-- ghost component -->
+    <ng-container *ngIf="loading">
+      <app-art-detail-ghost></app-art-detail-ghost>
+    </ng-container>
+
+    <!-- main content -->
+    <div class="article" *ngIf="!loading">
+      <div class="article_title">
+        <div class="title">
+          {{ article?.title }}
+        </div>
+      </div>
+
+      <div class="article_meta">
+        <div class="photo_space">
+          <img [src]="avatarPlaceholder" alt="user photo" />
+        </div>
+
+        <div class="detail_space">
+          <div class="name">
+            Author : <b>{{ article?.author?.name }}</b>
+          </div>
+          <div class="date_space">Published : {{ article?.createdAt | date }}</div>
+        </div>
+      </div>
+
+      <div class="article_image">
+        <img [src]="article.image" alt="article image" />
+      </div>
+
+      <div class="article_detail">
+        <div id="content" [innerHTML]="article?.content"></div>
+      </div>
+    </div>
+  </div>
+</section>

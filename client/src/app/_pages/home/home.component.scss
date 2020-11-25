@@ -1,0 +1,160 @@
+/* --------- heading --------- */
+#heading {
+  margin-top: 50px !important;
+
+  @media (max-width: 777px) {
+    margin-top: 10px !important;
+  }
+}
+
+.heading-section {
+  text-align: center;
+}
+
+.heading-section h1 {
+  font-size: 58px;
+}
+
+/* -------- carousel -------- */
+
+.item {
+  padding: 0;
+  width: 100vw;
+  height: 500px;
+  color: #fff;
+  font-size: 40px;
+  line-height: 33px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  filter: saturate(0.7);
+
+  &:hover {
+    filter: saturate(1);
+  }
+
+  span {
+    font-family: Ubuntu, Roboto;
+    background-color: #00000096;
+    color: #ffffff;
+    padding: 20px;
+  }
+
+  @media (max-width: 777px) {
+    font-size: 22px;
+  }
+}
+
+carousel {
+  height: 100%;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------- statistics ------ */
+.stats_section {
+  text-align: center;
+}
+
+.stats_heading {
+  padding-bottom: 25px;
+
+  @media (max-width: 777px) {
+    padding-bottom: 10px;
+  }
+}
+
+.stats_heading h2 {
+  font-size: 32px;
+}
+.stats_heading h3 {
+  font-size: 20px;
+}
+
+.fx-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  width: 23%;
+  border-radius: 20px;
+
+  &:nth-child(1) {
+    background-color: #d12f2f;
+    color: white;
+  }
+  &:nth-child(2) {
+    background-color: #40d848;
+    color: black;
+  }
+  &:nth-child(3) {
+    background-color: #f5de31;
+    color: black;
+  }
+  &:nth-child(4) {
+    background-color: #40a8d8;
+    color: black;
+  }
+
+  &.--id {
+    background-color: #ffffff;
+    box-shadow: 0px 1px 6px 2px #e8e8e8;
+
+    &:nth-child(1) {
+      color: #cf3c3c;
+    }
+    &:nth-child(2) {
+      color: #2ed237;
+    }
+    &:nth-child(3) {
+      color: #ff7f2a;
+    }
+    &:nth-child(4) {
+      color: #40a8d8;
+    }
+  }
+
+  @media (max-width: 777px) {
+    width: 50%;
+    border-radius: 0;
+
+    &.--id {
+      width: 100%;
+      margin: 0 20px 20px;
+      border-radius: 10px;
+      height: 130px;
+
+      .stat_number {
+        font-size: 46px !important;
+        font-family: Ubuntu, Roboto;
+      }
+    }
+  }
+}
+
+.stat_number {
+  flex-basis: 27%; // vertical
+  font-weight: 700;
+  font-size: 50px;
+  margin-bottom: 5px;
+}
+
+.stat_text {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* ------------- covid id section --------------- */

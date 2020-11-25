@@ -1,0 +1,54 @@
+:host {
+  font-family: Roboto, Ubuntu;
+}
+
+.form_space {
+  display: flex;
+  flex-direction: column;
+}
+
+mat-form-field {
+  width: 100%;
+  font-size: 14px;
+  // font-weight: 300;
+}
+
+mat-icon {
+  font-weight: bold;
+}
+
+.dialog-title {
+  text-align: center;
+  font-weight: 500;
+  height: 40px;
+}
+
+.dialog-action {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  button:disabled {
+    mat-icon {
+      color: #cccccc;
+    }
+  }
+}
+
+.mat-fab {
+  height: 46px !important;
+	width: 46px !important;
+	box-shadow: none !important;
+	background-color: #0091ea;
+
+	mat-icon {
+		color: white;
+	}
+}
+
+.right-button {
+	margin-left: 50px;
+	background-color: #db3636;
+}

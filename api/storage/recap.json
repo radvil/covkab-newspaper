@@ -1,0 +1,424 @@
+{
+  "doc": [
+    {
+      "kecamatan": "Lambandia",
+      "hasil": [
+        {
+          "kategori": "odp",
+          "status": {
+            "pemantauan": "1",
+            "selesai": "8"
+          }
+        },
+        {
+          "kategori": "pdp",
+          "status": {
+            "pengawasan": "0",
+            "selesai": "0"
+          }
+        },
+        {
+          "kategori": "otg",
+          "status": {
+            "pemantauan": "21",
+            "selesai": "0"
+          }
+        },
+        {
+          "kategori": "positif",
+          "status": {
+            "dirawat": "1",
+            "sembuh": "0",
+            "meninggal": "0"
+          }
+        }
+      ],
+      "updatedAt": "26, May 2020 08:00AM"
+    },
+    {
+      "kecamatan": "Aere",
+      "hasil": [
+        {
+          "kategori": "odp",
+          "status": {
+            "pemantauan": "0",
+            "selesai": "16"
+          }
+        },
+        {
+          "kategori": "pdp",
+          "status": {
+            "pengawasan": "0",
+            "selesai": "0"
+          }
+        },
+        {
+          "kategori": "otg",
+          "status": {
+            "pemantauan": "23",
+            "selesai": "2"
+          }
+        },
+        {
+          "kategori": "positif",
+          "status": {
+            "dirawat": "4",
+            "sembuh": "0",
+            "meninggal": "0"
+          }
+        }
+      ],
+      "updatedAt": "26, May 2020 08:00AM"
+    },
+    {
+      "kecamatan": "Poli-Polia",
+      "hasil": [
+        {
+          "kategori": "odp",
+          "status": {
+            "pemantauan": "0",
+            "selesai": "12"
+          }
+        },
+        {
+          "kategori": "pdp",
+          "status": {
+            "pengawasan": "0",
+            "selesai": "0"
+          }
+        },
+        {
+          "kategori": "otg",
+          "status": {
+            "pemantauan": "0",
+            "selesai": "0"
+          }
+        },
+        {
+          "kategori": "positif",
+          "status": {
+            "dirawat": "0",
+            "sembuh": "0",
+            "meninggal": "0"
+          }
+        }
+      ],
+      "updatedAt": "26, May 2020 08:00AM"
+    },
+    {
+      "kecamatan": "Dangia",
+      "hasil": [
+        {
+          "kategori": "odp",
+          "status": {
+            "pemantauan": "3",
+            "selesai": "12"
+          }
+        },
+        {
+          "kategori": "pdp",
+          "status": {
+            "pengawasan": "0",
+            "selesai": "0"
+          }
+        },
+        {
+          "kategori": "otg",
+          "status": {
+            "pemantauan": "1",
+            "selesai": "0"
+          }
+        },
+        {
+          "kategori": "positif",
+          "status": {
+            "dirawat": "0",
+            "sembuh": "0",
+            "meninggal": "0"
+          }
+        }
+      ],
+      "updatedAt": "26, May 2020 08:00AM"
+    },
+    {
+      "kecamatan": "Ladongi",
+      "hasil": [
+        {
+          "kategori": "odp",
+          "status": {
+            "pemantauan": "2",
+            "selesai": "41"
+          }
+        },
+        {
+          "kategori": "pdp",
+          "status": {
+            "pengawasan": "0",
+            "selesai": "1"
+          }
+        },
+        {
+          "kategori": "otg",
+          "status": {
+            "pemantauan": "83",
+            "selesai": "0"
+          }
+        },
+        {
+          "kategori": "positif",
+          "status": {
+            "dirawat": "1",
+            "sembuh": "0",
+            "meninggal": "0"
+          }
+        }
+      ],
+      "updatedAt": "26, May 2020 08:00AM"
+    },
+    {
+      "kecamatan": "Loea",
+      "hasil": [
+        {
+          "kategori": "odp",
+          "status": {
+            "pemantauan": "0",
+            "selesai": "3"
+          }
+        },
+        {
+          "kategori": "pdp",
+          "status": {
+            "pengawasan": "0",
+            "selesai": "0"
+          }
+        },
+        {
+          "kategori": "otg",
+          "status": {
+            "pemantauan": "0",
+            "selesai": "0"
+          }
+        },
+        {
+          "kategori": "positif",
+          "status": {
+            "dirawat": "0",
+            "sembuh": "0",
+            "meninggal": "0"
+          }
+        }
+      ],
+      "updatedAt": "26, May 2020 08:00AM"
+    },
+    {
+      "kecamatan": "Tirawuta",
+      "hasil": [
+        {
+          "kategori": "odp",
+          "status": {
+            "pemantauan": "1",
+            "selesai": "7"
+          }
+        },
+        {
+          "kategori": "pdp",
+          "status": {
+            "pengawasan": "0",
+            "selesai": "0"
+          }
+        },
+        {
+          "kategori": "otg",
+          "status": {
+            "pemantauan": "9",
+            "selesai": "0"
+          }
+        },
+        {
+          "kategori": "positif",
+          "status": {
+            "dirawat": "1",
+            "sembuh": "0",
+            "meninggal": "0"
+          }
+        }
+      ],
+      "updatedAt": "26, May 2020 08:00AM"
+    },
+    {
+      "kecamatan": "Lalollae",
+      "hasil": [
+        {
+          "kategori": "odp",
+          "status": {
+            "pemantauan": "0",
+            "selesai": "4"
+          }
+        },
+        {
+          "kategori": "pdp",
+          "status": {
+            "pengawasan": "0",
+            "selesai": "0"
+          }
+        },
+        {
+          "kategori": "otg",
+          "status": {
+            "pemantauan": "0",
+            "selesai": "0"
+          }
+        },
+        {
+          "kategori": "positif",
+          "status": {
+            "dirawat": "0",
+            "sembuh": "0",
+            "meninggal": "0"
+          }
+        }
+      ],
+      "updatedAt": "26, May 2020 08:00AM"
+    },
+    {
+      "kecamatan": "Mowewe",
+      "hasil": [
+        {
+          "kategori": "odp",
+          "status": {
+            "pemantauan": "0",
+            "selesai": "5"
+          }
+        },
+        {
+          "kategori": "pdp",
+          "status": {
+            "pengawasan": "0",
+            "selesai": "0"
+          }
+        },
+        {
+          "kategori": "otg",
+          "status": {
+            "pemantauan": "8",
+            "selesai": "0"
+          }
+        },
+        {
+          "kategori": "positif",
+          "status": {
+            "dirawat": "1",
+            "sembuh": "0",
+            "meninggal": "0"
+          }
+        }
+      ],
+      "updatedAt": "26, May 2020 08:00AM"
+    },
+    {
+      "kecamatan": "Tinondo",
+      "hasil": [
+        {
+          "kategori": "odp",
+          "status": {
+            "pemantauan": "0",
+            "selesai": "1"
+          }
+        },
+        {
+          "kategori": "pdp",
+          "status": {
+            "pengawasan": "0",
+            "selesai": "0"
+          }
+        },
+        {
+          "kategori": "otg",
+          "status": {
+            "pemantauan": "0",
+            "selesai": "0"
+          }
+        },
+        {
+          "kategori": "positif",
+          "status": {
+            "dirawat": "0",
+            "sembuh": "0",
+            "meninggal": "0"
+          }
+        }
+      ],
+      "updatedAt": "26, May 2020 08:00AM"
+    },
+    {
+      "kecamatan": "Uluiwoi",
+      "hasil": [
+        {
+          "kategori": "odp",
+          "status": {
+            "pemantauan": "0",
+            "selesai": "6"
+          }
+        },
+        {
+          "kategori": "pdp",
+          "status": {
+            "pengawasan": "0",
+            "selesai": "0"
+          }
+        },
+        {
+          "kategori": "otg",
+          "status": {
+            "pemantauan": "0",
+            "selesai": "0"
+          }
+        },
+        {
+          "kategori": "positif",
+          "status": {
+            "dirawat": "0",
+            "sembuh": "0",
+            "meninggal": "0"
+          }
+        }
+      ],
+      "updatedAt": "26, May 2020 08:00AM"
+    },
+    {
+      "kecamatan": "Ueesi",
+      "hasil": [
+        {
+          "kategori": "odp",
+          "status": {
+            "pemantauan": "5",
+            "selesai": "4"
+          }
+        },
+        {
+          "kategori": "pdp",
+          "status": {
+            "pengawasan": "0",
+            "selesai": "0"
+          }
+        },
+        {
+          "kategori": "otg",
+          "status": {
+            "pemantauan": "12",
+            "selesai": "13"
+          }
+        },
+        {
+          "kategori": "positif",
+          "status": {
+            "dirawat": "4",
+            "sembuh": "0",
+            "meninggal": "0"
+          }
+        }
+      ],
+      "updatedAt": "26, May 2020 08:00AM"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+.app-main__inner {
+  padding: 77px;
+
+  @media (max-width: 777px) {
+    padding: 10px;
+  }
+}
+
+.app-page-title {
+  padding: 30px !important;
+  background-color: rgb(241, 244, 246);
+}
+
+.card {
+  padding: 0;
+  border-radius: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  @media (max-width: 777px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.intro_space {
+  flex: 1;
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+
+    @media (max-width: 777px) {
+      height: 150px;
+    }
+  }
+}
+
+.form_space {
+  flex: 2;
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 777px) {
+    padding: 10px 20px;
+    width: 100%;
+  }
+}
+
+.fx-row {
+  display: flex;
+  flex-direction: row;
+
+  @media (max-width: 777px) {
+    flex-direction: column;
+  }
+}
+
+.fx-row > mat-form-field {
+  flex-basis: 48%;
+}
+
+form {
+  flex-basis: 77%;
+
+  @media (max-width: 777px) {
+    flex-basis: 100%;
+  }
+}
+
+.input_space {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  button {
+    flex-basis: 37%;
+    height: 50px;
+    border-radius: 0;
+    margin: 20px 20px 0 0;
+
+    &.btn_submit {
+      background-color: #0098d0;
+      color: white;
+
+      &:disabled {
+        background-color: #cccccc;
+      }
+    }
+
+    &.btn_cancel {
+      background-color: white;
+      color: red;
+    }
+
+    @media (max-width: 777px) {
+      width: 100%;
+      flex-basis: unset;
+      margin: 0 0 10px 0;
+    }
+  }
+}

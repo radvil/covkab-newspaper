@@ -1,0 +1,136 @@
+﻿{
+  "doc": [
+    {
+      "no": "1",
+      "name": "Juli Tridianto",
+      "age ": "30",
+      "gender": "Laki-Laki",
+      "address": "Desa Tongauna, Kec. Ueesi",
+      "dateSwab": "18-Apr-20",
+      "dateResult": "26-Apr-20",
+      "history": "Ijtima Ulama Gowa Sulsel",
+      "detail": "RS Darurat Unaaha"
+    },
+    {
+      "no": "2",
+      "name": "Dzulfikar Prakosa",
+      "age ": "7",
+      "gender": "Laki-Laki",
+      "address": "Desa Tongauna, Kec. Ueesi",
+      "dateSwab": "29-Apr-20",
+      "dateResult": "5 Mei 2020",
+      "history": "Juli Tridianto",
+      "detail": "RS Darurat Unaaha"
+    },
+    {
+      "no": "3",
+      "name": "Ardiansyah",
+      "age ": "19",
+      "gender": "Laki-Laki",
+      "address": "Desa Aere, Kec. Aere",
+      "dateSwab": "3 Mei 2020",
+      "dateResult": "10 Mei 2020",
+      "history": "Pesantren Temboro, Magetan",
+      "detail": "RS Darurat Unaaha"
+    },
+    {
+      "no": "4",
+      "name": "Sholehudin",
+      "age ": "22",
+      "gender": "Laki-Laki",
+      "address": "Desa Penanggotu, Kec. Lambandia",
+      "dateSwab": "3 Mei 2020",
+      "dateResult": "10 Mei 2020",
+      "history": "Pesantren Temboro, Magetan",
+      "detail": "RS Darurat Unaaha"
+    },
+    {
+      "no": "5",
+      "name": "Abd. Musawwir",
+      "age ": "21",
+      "gender": "Laki-Laki",
+      "address": "Desa Aere, Kec. Aere",
+      "dateSwab": "3 Mei 2020",
+      "dateResult": "10 Mei 2020",
+      "history": "Pesantren Temboro, Magetan",
+      "detail": "RS Darurat Unaaha"
+    },
+    {
+      "no": "6",
+      "name": "Muh. Ramadhan",
+      "age ": "23",
+      "gender": "Laki-Laki",
+      "address": "Desa Nelombu, Kec. Mowewe",
+      "dateSwab": "3 Mei 2020",
+      "dateResult": "10 Mei 2020",
+      "history": "Pesantren Temboro, Magetan",
+      "detail": "RS Darurat Unaaha"
+    },
+    {
+      "no": "7",
+      "name": "Abd. Rahman",
+      "age ": "20",
+      "gender": "Laki-Laki",
+      "address": "Kel. Ladongi, Kec. Ladongi",
+      "dateSwab": "3 Mei 2020",
+      "dateResult": "10 Mei 2020",
+      "history": "Pesantren Temboro, Magetan",
+      "detail": "RS Darurat Unaaha"
+    },
+    {
+      "no": "8",
+      "name": "Yeti Jayanti",
+      "age ": "28",
+      "gender": "Perempuan",
+      "address": "Desa Tongauna, Kec. Ueesi",
+      "dateSwab": "6 Mei 2020",
+      "dateResult": "13 Mei 2020",
+      "history": "Juli Tridianto",
+      "detail": "RS Darurat Unaaha"
+    },
+    {
+      "no": "9",
+      "name": "Fatimah",
+      "age ": "2",
+      "gender": "Perempuan",
+      "address": "Desa Tongauna, Kec. Ueesi",
+      "dateSwab": "6 Mei 2020",
+      "dateResult": "13 Mei 2020",
+      "history": "Juli Tridianto",
+      "detail": "RS Darurat Unaaha"
+    },
+    {
+      "no": "10",
+      "name": "Rahman",
+      "age ": "37",
+      "gender": "Laki-Laki",
+      "address": "Kel. Rate-Rate, Kec. Tirawuta",
+      "dateSwab": "13 Mei 2020",
+      "dateResult": "19 Mei 2020",
+      "history": "Sukabumi",
+      "detail": "RS Bhayangkara"
+    },
+    {
+      "no": "11",
+      "name": "Indotang",
+      "age ": "45",
+      "gender": "Perempuan",
+      "address": "Desa Aere, Kec. Aere",
+      "dateSwab": "16 Mei 2020",
+      "dateResult": "23 Mei 2020",
+      "history": "Abd. Musawwir",
+      "detail": "RS Darurat Unaaha"
+    },
+    {
+      "no": "12",
+      "name": "Nur Afiah",
+      "age ": "17",
+      "gender": "Perempuan",
+      "address": "Desa Aere, Kec. Aere",
+      "dateSwab": "16 Mei 2020",
+      "dateResult": "23 Mei 2020",
+      "history": "Abd. Musawwir",
+      "detail": "RS Darurat Unaaha"
+    }
+  ]
+}

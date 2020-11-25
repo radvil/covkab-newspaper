@@ -1,0 +1,62 @@
+<div class="app-main__inner">
+  <app-page_title
+    icon="pe-7s-info"
+    title="About"
+    subtitle="Sekilas Tentang Aplikasi CovKab"
+  ></app-page_title>
+
+  <!-- CONTENT STARTS HERE -->
+  <mat-card style="margin-bottom: 30px;">
+    <ng-container>
+      <h5 class="form-title">Edit About</h5>
+      <form [formGroup]="form" (ngSubmit)="submitForm()">
+        <div class="row">
+          <mat-form-field class="col-12" appearance="fill">
+            <mat-label>Title</mat-label>
+            <input
+              formControlName="title"
+              type="text"
+              matInput
+              placeholder="Title"
+            />
+            <mat-error>This field is required</mat-error>
+          </mat-form-field>
+
+          <div class="col-12">
+            <quill-editor
+              formControlName="content"
+              [styles]="editor.style"
+              [modules]="editor.config"
+            ></quill-editor>
+          </div>
+
+          <!-- BUTTONS -->
+          <div class="col-6">
+            <br />
+            <button
+              style="width: 100%; height: 4em;"
+              type="submit"
+              mat-raised-button
+              color="accent"
+              [disabled]="form.invalid"
+            >
+              Submit update
+            </button>
+          </div>
+          <div class="col-6">
+            <br />
+            <button
+              (click)="cancelSubmit()"
+              style="width: 100%; height: 4em;"
+              type="button"
+              mat-stroked-button
+              color="warn"
+            >
+              Cancel Submit
+            </button>
+          </div>
+        </div>
+      </form>
+    </ng-container>
+  </mat-card>
+</div>

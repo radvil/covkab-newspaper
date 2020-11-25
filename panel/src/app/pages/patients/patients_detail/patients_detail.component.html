@@ -1,0 +1,98 @@
+<div class="app-main__inner">
+  <app-page_title
+    icon="pe-7s-id"
+    title="Patients"
+    subtitle="Detail Pasien"
+  ></app-page_title>
+
+  <div class="main card">
+    <div class="patient_profile">
+      <!-- photo space -->
+      <div class="photo_space">
+        <img [src]="imageSrc" alt="patient photo" />
+        <div class="status">{{ patient?.status | uppercase }}</div>
+      </div>
+
+      <!-- detail space -->
+      <div class="detail_space">
+        <div class="detail_row">
+          <div class="title">Nama</div>
+          <div class="value">{{ patient?.name }}</div>
+        </div>
+
+        <div class="detail_row">
+          <div class="title">Jenis Kelamin</div>
+          <div class="value">{{ patient?.gender }}</div>
+        </div>
+
+        <div class="detail_row">
+          <div class="title">Kecamatan</div>
+          <div class="value">{{ patient?.residence }}</div>
+        </div>
+
+        <div class="detail_row" *ngIf="patient?.address">
+          <div class="title">Alamat</div>
+          <div class="value">{{ patient?.address }}</div>
+        </div>
+
+        <div class="detail_row" *ngIf="patient?.nik">
+          <div class="title">No. NIK</div>
+          <div class="value">{{ patient?.nik }}</div>
+        </div>
+
+        <div class="detail_row" *ngIf="patient?.phone">
+          <div class="title">No. HP</div>
+          <div class="value">{{ patient?.phone }}</div>
+        </div>
+
+        <div class="detail_row">
+          <div class="title">Status</div>
+          <div class="value">{{ patient?.status | uppercase }}</div>
+        </div>
+
+        <div class="detail_row">
+          <div class="title">Pemudik</div>
+          <div
+            class="value badge badge-info"
+            *ngIf="patient?.hasMudik === false"
+          >
+            BUKAN
+          </div>
+          <div
+            class="value badge badge-danger"
+            *ngIf="patient?.hasMudik === true"
+          >
+            YA
+          </div>
+        </div>
+
+        <div class="detail_row" *ngIf="patient?.detail">
+          <div class="title">Keterangan</div>
+          <div class="value">
+            {{ patient?.detail }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="btn_edit">
+      <button
+        (click)="editPatient()"
+        type="button"
+        mat-flat-button
+        matTooltip="Edit data"
+      >
+        <mat-icon>edit</mat-icon>&nbsp;Edit Data
+      </button>
+
+      <button
+        (click)="deletePatient(patient?._id)"
+        type="button"
+        mat-flat-button
+        matTooltip="Delete data"
+      >
+        <mat-icon>delete</mat-icon>&nbsp;Delete Data
+      </button>
+    </div>
+  </div>
+</div>

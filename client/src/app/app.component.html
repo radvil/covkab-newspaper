@@ -1,0 +1,103 @@
+<!-- app progress bar -->
+<ngx-loading-bar [includeSpinner]="false"></ngx-loading-bar>
+
+<!-- app shell -->
+<div class="app-shell">
+	<mat-toolbar
+		class="navigation-toolbar"
+		[class.navigation-is-mobile]="mobileQuery.matches"
+		[class.mat-elevation-z0]="!isActive"
+		[class.mat-elevation-z5]="isActive"
+		[class.animated-header]="!isActivefadeInDown"
+		[class.fadeInDown]="!isActivefadeInDown"
+		[class.navigation-fixed]="!isFixedToolbar"
+	>
+		<button
+			fxShow="true"
+			fxShow.gt-xs="false"
+			mat-icon-button
+			(click)="snav.toggle()"
+		>
+			<mat-icon>menu</mat-icon>
+		</button>
+		<a class="logo" fxShow="false" fxShow.gt-xs="true" routerLink="/">
+			<img src="assets/logo.png" style="height: 40px" />
+		</a>
+
+		<!-- topnav list item -->
+		<mat-nav-list
+			class="navigation-list-top"
+			fxLayout="row"
+			fxShow="false"
+			fxShow.gt-xs="true"
+		>
+			<button mat-flat-button routerLink="home" routerLinkActive="active">
+				<span>Home</span>
+      </button>
+			<button mat-flat-button routerLink="articles" routerLinkActive="active">
+				<span>All Articles</span>
+      </button>
+			<button mat-flat-button routerLink="covId" routerLinkActive="active">
+				<span>CovId Statistic</span>
+      </button>
+			<button mat-flat-button routerLink="about" routerLinkActive="active">
+				<span>About</span>
+      </button>
+		</mat-nav-list>
+
+		<span class="navigation-spacer"></span>
+
+		<button
+			id="contact-fab-button"
+			(click)="openDialog()"
+			mat-icon-button
+			color="primary"
+			matTooltip="Ask for help or suggestion"
+			[matTooltipPosition]="'left'"
+		>
+			<mat-icon class="message">email</mat-icon>
+		</button>
+	</mat-toolbar>
+
+	<div class="navigation-empty" fxShow="false" fxShow.gt-xs="true"></div>
+
+	<mat-sidenav-container
+		class="navigation-sidenav-container"
+		[style.marginTop.px]="mobileQuery.matches ? 56 : 0"
+	>
+		<mat-sidenav
+			#snav
+			[mode]="mobileQuery.matches ? 'over' : 'side'"
+			[fixedInViewport]="mobileQuery.matches"
+			(opened)="setToggleOn()"
+			(closed)="setToggleOff()"
+		>
+			<!-- sidenav list item -->
+			<mat-nav-list (click)="snav.toggle()" class="navigation-list-side">
+				<div class="spacer" style="height: 56px"></div>
+				<a mat-list-item routerLink="home" routerLinkActive="active">
+					<mat-icon>home</mat-icon>&nbsp;&nbsp;&nbsp; Home
+        </a>
+				<a
+					mat-list-item
+					routerLink="articles"
+					routerLinkActive="active"
+				>
+					<mat-icon>receipt</mat-icon>&nbsp;&nbsp;&nbsp; All Articles
+				</a>
+				<a mat-list-item routerLink="covId" routerLinkActive="active">
+					<mat-icon>poll</mat-icon>&nbsp;&nbsp;&nbsp; CovId Statistic
+        </a>
+				<a mat-list-item routerLink="about" routerLinkActive="active">
+					<mat-icon>info</mat-icon>&nbsp;&nbsp;&nbsp; About
+        </a>
+			</mat-nav-list>
+		</mat-sidenav>
+
+		<mat-sidenav-content nglp-scroll (onScroll)="detectScroll($event)">
+			<router-outlet></router-outlet>
+
+			<app-footer></app-footer>
+		</mat-sidenav-content>
+	</mat-sidenav-container>
+</div>

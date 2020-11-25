@@ -1,0 +1,64 @@
+<div class="window_container">
+  <div class="window_header">
+    <div class="window_title">
+      {{ windowTitle }}
+    </div>
+    <span class="spacer"></span>
+    <div class="window_button">
+      <button (click)="dialogRef.close(null)" mat-flat-button>
+        <mat-icon>close</mat-icon>
+      </button>
+    </div>
+  </div>
+
+  <mat-dialog-content *ngIf="settings$ | async as settings">
+    <section>
+      <span class="badge badge-dark">Header Background</span>
+
+      <ul>
+        <ng-container *ngFor="let bg of bgClasses; index as i">
+          <li
+            (click)="onBackgroundClick(i)"
+            [class]="bg + (settings.headerBackground === bg ? ' active' : '')"
+          ></li>
+        </ng-container>
+      </ul>
+    </section>
+
+    <section class="slider">
+      <mat-icon color="accent">
+        wb_sunny
+      </mat-icon>
+      &nbsp;&nbsp;&nbsp;
+
+      <mat-placeholder>Toggle Fixed Header</mat-placeholder>&nbsp;&nbsp;&nbsp;
+      <mat-slide-toggle
+        [checked]="settings.fixedHeader"
+        (change)="onToggleFixedHeader($event)"
+      >
+      </mat-slide-toggle>
+    </section>
+
+    <section class="slider">
+      <mat-icon color="warn">
+        wb_sunny
+      </mat-icon>
+      &nbsp;&nbsp;&nbsp;
+
+      <mat-placeholder>Toggle Fixed Sidebar</mat-placeholder>&nbsp;&nbsp;&nbsp;
+      <mat-slide-toggle
+        [checked]="settings.fixedSidebar"
+        (change)="onToggleFixedSidebar($event)"
+      >
+      </mat-slide-toggle>
+    </section>
+  </mat-dialog-content>
+
+  <mat-dialog-actions>
+    <div class="window_actions">
+      <button mat-stroked-button (click)="resetDefaultBg()">
+        Reset Header
+      </button>
+    </div>
+  </mat-dialog-actions>
+</div>

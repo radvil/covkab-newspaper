@@ -1,0 +1,1 @@
+rsync -a ./panel/dist/covtim/ root@34.87.176.230:/var/www/html/ --verbose; ssh root@34.87.176.230

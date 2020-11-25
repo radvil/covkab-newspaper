@@ -1,0 +1,135 @@
+<div class="app-main__inner">
+  <app-page_title
+    icon="pe-7s-photo"
+    [title]="pageTitle"
+    [subtitle]="pageSubtitle"
+  ></app-page_title>
+
+  <!-- spinner -->
+  <div class="spinner-container" *ngIf="loading$ | async">
+    <mat-spinner color="accent"></mat-spinner>
+  </div>
+
+  <div class="main card">
+    <form [formGroup]="form" (ngSubmit)="onSubmitForm()">
+      <div class="form-group">
+        <!-- image hint -->
+        <div class="image_hint">
+          <div class="badge badge-warning">
+            Ukuran gambar maksimal = 2MB (2048kb)
+          </div>
+        </div>
+        <div class="col-12">
+          <!-- IMAGE PREVIEW ON ADD -->
+          <div class="preview" *ngIf="preview && preview !== null && !idParam">
+            <img
+              (click)="fileInput.click()"
+              matTooltip="Change photo"
+              [src]="preview"
+              [alt]="form.value.caption"
+            />
+          </div>
+
+          <!-- IMAGE PREVIEW ON EDIT -->
+          <div class="preview_edit" *ngIf="idParam">
+            <img [src]="preview" [alt]="form.value.caption" />
+          </div>
+
+          <!-- FILE INPUT -->
+          <div style="display: none;">
+            <input #fileInput type="file" (change)="onFileSelected($event)" />
+          </div>
+        </div>
+      </div>
+
+      <!-- SELECT PHOTO -->
+      <div class="form-row" *ngIf="!idParam" style="margin-bottom: 10px;">
+        <div class="col-6" *ngIf="!preview">
+          <button
+            mat-flat-button
+            matTooltip="Select photo"
+            (click)="fileInput.click()"
+            type="button"
+            color="accent"
+          >
+            Select photo
+          </button>
+        </div>
+      </div>
+
+      <!-- imageAlt INPUT  -->
+      <div class="form-row">
+        <mat-form-field appearance="fill" class="col-12">
+          <mat-label>Alternative image url</mat-label>
+          <input
+            matInput
+            formControlName="imageAlt"
+            placeholder="Paste alternative image link"
+            type="text"
+          />
+          <mat-error *ngIf="form.get('imageAlt').hasError('maxlength')">
+              Max 255 karakter
+          </mat-error>
+        </mat-form-field>
+      </div>
+
+      <!-- TITLE INPUT  -->
+      <div class="form-row">
+        <mat-form-field appearance="fill" class="col-12">
+          <mat-label>Portfolio Caption</mat-label>
+          <textarea
+            matInput
+            formControlName="caption"
+            cdkAutoSizeMinRows="1"
+            cdkAutoSizeMaxRows="10"
+            placeholder="Tulis caption untuk foto ini..."
+            type="text"
+            style="min-height: 50px;"
+          ></textarea>
+          <mat-error *ngIf="form.get('caption').hasError('required')"
+            >Tidak boleh kosong</mat-error
+          >
+          <mat-error *ngIf="form.get('caption').hasError('minlength')"
+            >Min 5 karakter</mat-error
+          >
+          <mat-error *ngIf="form.get('caption').hasError('maxlength')"
+            >Max 500 karakter</mat-error
+          >
+        </mat-form-field>
+      </div>
+
+      <div class="form-row">
+        <input
+          type="text"
+          formControlName="author"
+          style="visibility: hidden;"
+        />
+      </div>
+
+      <div class="form-row">
+        <!-- SUBMIT BUTTONS -->
+        <div class="col-6">
+          <button
+            [disabled]="form.invalid || (loading$ | async)"
+            type="submit"
+            mat-raised-button
+            class="btn-submit"
+          >
+            Submit
+          </button>
+        </div>
+        <!-- CANCEL BUTTONS -->
+        <div class="col-6">
+          <button
+            (click)="cancelSubmit()"
+            type="button"
+            mat-stroked-button
+            class="btn-cancel"
+          >
+            Cancel
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

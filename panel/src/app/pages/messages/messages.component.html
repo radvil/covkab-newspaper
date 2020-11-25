@@ -1,0 +1,92 @@
+<div class="app-main__inner">
+  <app-page_title
+    icon="pe-7s-mail"
+    title="Kotak Saran"
+    subtitle="Kumpulan Saran/Masukan"
+  >
+    <app-finder (onKeyUp)="applyFilter($event)"></app-finder>
+  </app-page_title>
+
+  <!-- no item placeholder -->
+  <div class="ph-noitem" *ngIf="!data_source">Item kosong</div>
+
+  <div class="main">
+    <!-- TABLE OF MESSAGES -->
+    <table
+      mat-table
+      [dataSource]="data_source"
+      matSort
+      class="table-striped table-hover"
+    >
+      <!-- name field -->
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>
+          Nama Pengirim
+        </th>
+        <td mat-cell *matCellDef="let row">
+          {{ row.name }}
+        </td>
+      </ng-container>
+
+      <!-- phone field -->
+      <ng-container matColumnDef="phone">
+        <th class="pc" mat-header-cell *matHeaderCellDef>
+          Nomor HP
+        </th>
+        <td class="pc" mat-cell *matCellDef="let row">
+          {{ row.phone }}
+        </td>
+      </ng-container>
+
+      <!-- message field -->
+      <ng-container matColumnDef="message">
+        <th class="pc" mat-header-cell *matHeaderCellDef>Isi Pesan</th>
+        <td class="pc" mat-cell *matCellDef="let row">
+          <div class="widget-content p-0">
+            <div class="widget-content-wrapper">
+              <div class="widget-content-left flex2">
+                <div class="widget-heading giveMeEllipsis">
+                  {{ row.message }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </td>
+      </ng-container>
+
+      <!-- createdAt field -->
+      <ng-container matColumnDef="createdAt">
+        <th mat-header-cell mat-sort-header *matHeaderCellDef>
+          Tanggal Masuk
+        </th>
+        <td mat-cell *matCellDef="let row">{{ row.createdAt }}</td>
+      </ng-container>
+
+      <!-- Action field -->
+      <ng-container matColumnDef="action">
+        <th mat-header-cell *matHeaderCellDef>
+          ###
+        </th>
+        <td mat-cell *matCellDef="let row">
+          <app-menu_actions
+            [selectedId]="row._id"
+            [canEdit]="false"
+            [canDelete]="isRoot"
+            (onClickedShow)="showMessage($event)"
+            (onClickedDelete)="deleteMessage($event)"
+          ></app-menu_actions>
+        </td>
+      </ng-container>
+
+      <!-- displayedColumns -->
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+
+    <!-- paginator -->
+    <mat-paginator
+      [pageSizeOptions]="[5, 10, 50, 100]"
+      showFirstLastButtons
+    ></mat-paginator>
+  </div>
+</div>

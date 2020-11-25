@@ -1,0 +1,169 @@
+﻿{
+  "doc": [
+    {
+      "no": "1",
+      "name": "Dzulfikar Prakosa",
+      "age": "7",
+      "gender": "Laki-Laki",
+      "address": "Desa Tongauna, Kec. Ueesi",
+      "history": "Juli Tridianto",
+      "watchedAt": "26 April - 9 Mei 2020",
+      "detail": "Kontak Serumah",
+      "swabResult": "PCR Positif"
+    },
+    {
+      "no": "2",
+      "name": "Nurdin",
+      "age": "78",
+      "gender": "Laki-Laki",
+      "address": "Desa Tongauna, Kec. Ueesi",
+      "history": "Juli Tridianto",
+      "watchedAt": "28 April - 11 Mei 2020",
+      "detail": "Salaman",
+      "swabResult": "PCR Negatif"
+    },
+    {
+      "no": "3",
+      "name": "Nasikin",
+      "age": "45",
+      "gender": "Laki-Laki",
+      "address": "Desa Tongauna, Kec. Ueesi",
+      "history": "Juli Tridianto",
+      "watchedAt": "28 April - 11 Mei 2020",
+      "detail": "Bincang-Bincang",
+      "swabResult": "PCR Negatif"
+    },
+    {
+      "no": "4",
+      "name": "Juki",
+      "age": "49",
+      "gender": "Laki-Laki",
+      "address": "Desa Tongauna, Kec. Ueesi",
+      "history": "Juli Tridianto",
+      "watchedAt": "28 April - 11 Mei 2020",
+      "detail": "Bincang-Bincang",
+      "swabResult": "PCR Negatif"
+    },
+    {
+      "no": "5",
+      "name": "Sundari",
+      "age": "47",
+      "gender": "Perempuan",
+      "address": "Desa Tongauna, Kec. Ueesi",
+      "history": "Juli Tridianto",
+      "watchedAt": "28 April - 11 Mei 2020",
+      "detail": "Bincang-Bincang",
+      "swabResult": "PCR Negatif"
+    },
+    {
+      "no": "6",
+      "name": "Mustofa",
+      "age": "41",
+      "gender": "Laki-Laki",
+      "address": "Desa Tongauna, Kec. Ueesi",
+      "history": "Juli Tridianto",
+      "watchedAt": "28 April - 11 Mei 2020",
+      "detail": "Bincang-Bincang",
+      "swabResult": "PCR Negatif"
+    },
+    {
+      "no": "7",
+      "name": "Nursam",
+      "age": "49",
+      "gender": "Laki-Laki",
+      "address": "Desa Tongauna, Kec. Ueesi",
+      "history": "Juli Tridianto",
+      "watchedAt": "28 April - 11 Mei 2020",
+      "detail": "Sholat bersama",
+      "swabResult": "PCR Negatif"
+    },
+    {
+      "no": "8",
+      "name": "Kusmiran",
+      "age": "42",
+      "gender": "Laki-Laki",
+      "address": "Desa Tongauna, Kec. Ueesi",
+      "history": "Juli Tridianto",
+      "watchedAt": "28 April - 11 Mei 2020",
+      "detail": "Bincang-Bincang",
+      "swabResult": "PCR Negatif"
+    },
+    {
+      "no": "9",
+      "name": "Masail",
+      "age": "49",
+      "gender": "Laki-Laki",
+      "address": "Desa Tongauna, Kec. Ueesi",
+      "history": "Juli Tridianto",
+      "watchedAt": "28 April - 11 Mei 2020",
+      "detail": "Bincang-Bincang",
+      "swabResult": "PCR Negatif"
+    },
+    {
+      "no": "10",
+      "name": "Yono",
+      "age": "50",
+      "gender": "Laki-Laki",
+      "address": "Desa Tongauna, Kec. Ueesi",
+      "history": "Juli Tridianto",
+      "watchedAt": "28 April - 11 Mei 2020",
+      "detail": "Bincang-Bincang",
+      "swabResult": "PCR Negatif"
+    },
+    {
+      "no": "11",
+      "name": "Rahmatullah",
+      "age": "38",
+      "gender": "Laki-Laki",
+      "address": "Desa Tongauna, Kec. Ueesi",
+      "history": "Juli Tridianto",
+      "watchedAt": "28 April - 11 Mei 2020",
+      "detail": "Bincang-Bincang",
+      "swabResult": "PCR Negatif"
+    },
+    {
+      "no": "12",
+      "name": "Yeti Jayanti",
+      "age": "28",
+      "gender": "Perempuan",
+      "address": "Desa Tongauna, Kec. Ueesi",
+      "history": "Juli Tridianto",
+      "watchedAt": "26 April - 9 Mei 2020",
+      "detail": "Kontak Serumah",
+      "swabResult": "PCR Positif"
+    },
+    {
+      "no": "13",
+      "name": "Fatimah",
+      "age": "2",
+      "gender": "Perempuan",
+      "address": "Desa Tongauna, Kec. Ueesi",
+      "history": "Juli Tridianto",
+      "watchedAt": "26 April - 9 Mei 2020",
+      "detail": "Kontak Serumah",
+      "swabResult": "PCR Positif"
+    },
+    {
+      "no": "14",
+      "name": "Indotang",
+      "age": "45",
+      "gender": "Perempuan",
+      "address": "Desa Aere, Kec. Aere",
+      "history": "Abd. Musawwir",
+      "watchedAt": "11 Mei - 25 Mei 2020",
+      "detail": "Kontak Serumah",
+      "swabResult": "PCR Positif"
+    },
+    {
+      "no": "15",
+      "name": "Nur Afiah",
+      "age": "17",
+      "gender": "Perempuan",
+      "address": "Desa Aere, Kec. Aere",
+      "history": "Abd. Musawwir",
+      "watchedAt": "11 Mei - 25 Mei 2020",
+      "detail": "Kontak Serumah",
+      "swabResult": "PCR Positif"
+    }
+  ]
+}

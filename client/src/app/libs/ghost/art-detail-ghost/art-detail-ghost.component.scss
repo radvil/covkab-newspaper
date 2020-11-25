@@ -1,0 +1,39 @@
+.ph-picture,
+.ph-avatar,
+.ph-row > div {
+  background-color: #e2e2e2;
+}
+.ph-item { // by 3rd party lib, dont change var name
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  background-color: #fafafa;
+
+  > * {
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  .title {
+    margin-bottom: 10px;
+  }
+  .empty {
+    background-color: #fafafa;
+  }
+  .small,
+  .big {
+    border-radius: 20px;
+  }
+  .small {
+    height: 15px;
+  }
+}
+.ph-row {
+  height: 50px;
+}
+.ph-col-12 {
+  padding: 0;
+}
+.ph-picture {
+  height: 300px;
+}

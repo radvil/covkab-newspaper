@@ -1,0 +1,58 @@
+<section
+  id="heading"
+  class="mat-typography"
+  [ngStyle.lt-md]="{ 'margin-top': '30px', 'margin-bottom': '30px' }"
+>
+  <div class="container">
+    <div
+      class="heading-section"
+      fxLayout="column"
+      fxLayoutAlign="center center"
+    >
+      <div [class.animated]="isHeading" [class.fadeInLeft]="isHeading">
+        <h1
+          [ngStyle.xs]="{ 'font-size': '32px' }"
+          [ngStyle.sm]="{ 'font-size': '42px' }"
+        >
+          About
+        </h1>
+      </div>
+      <div [class.animated]="isSubheading" [class.fadeInRight]="isSubheading">
+        <h2
+          [ngStyle.xs]="{ 'font-size': '18px' }"
+          [ngStyle.sm]="{ 'font-size': '22px' }"
+        >
+          A Brief Intro About This Website
+        </h2>
+      </div>
+    </div>
+
+    <div class="tab_section">
+      <mat-tab-group mat-align-tabs="center" color="accent">
+        <mat-tab label="Web Info">
+          <ng-container *ngIf="about$ | async as about">
+            <div class="title">
+              <span>{{ about?.title }}</span>
+            </div>
+            <div class="content">
+              <div [innerHTML]="about?.content"></div>
+            </div>
+          </ng-container>
+        </mat-tab>
+        <mat-tab label="Contacts">
+          <div class="title">
+            <span>Website Contacts</span>
+          </div>
+          <div class="content" *ngIf="contact$ | async as contact">
+            <p>{{ contact?.intro }}</p>
+            <ul>
+              <li>Street Address: {{ contact?.address }}</li>
+              <li>Email Address: {{ contact?.email }}</li>
+              <li>Phone Number: {{ contact?.phone }}</li>
+            </ul>
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,31 @@
+.message {
+  text-align: center;
+}
+
+.fx-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+button {
+  flex-basis: 46%;
+  height: 50px;
+  border-radius: 0;
+
+  &:nth-child(1) {
+    background-color: #e82929;
+    color: white;
+  }
+
+  &:nth-child(2) {
+    background-color: white;
+    border: 1px solid #000000;
+    color: #000000;
+  }
+
+  &:hover {
+    background-color: #000000;
+    color: white;
+  }
+}

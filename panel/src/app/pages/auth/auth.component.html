@@ -1,0 +1,65 @@
+<div class="app-main__inner">
+  <app-page_title
+    icon="pe-7s-car"
+    title="Login"
+    subtitle="Autentikasi Login"
+  ></app-page_title>
+
+  <div class="main card">
+    <div class="intro_space">
+      <img src="assets/images/intro.jpeg" alt="intro" />
+    </div>
+    <div class="form_space">
+      <form [formGroup]="form" (ngSubmit)="submitForm()">
+        <div class="input_space">
+          <!-- nik field -->
+          <mat-form-field appearance="fill">
+            <mat-label>NIK</mat-label>
+            <input formControlName="nik" matInput placeholder="Masukkan NIK" />
+            <mat-error *ngIf="form.get('nik').hasError('required')"
+              >NIK is required</mat-error
+            >
+            <mat-error *ngIf="form.get('nik').hasError('minlength')"
+              >Min 11 chars allowed</mat-error
+            >
+          </mat-form-field>
+
+          <!-- password field -->
+          <mat-form-field appearance="fill">
+            <mat-label>Password</mat-label>
+            <input
+              matInput
+              [type]="showPassword ? 'text' : 'password'"
+              formControlName="password"
+              placeholder="Password"
+            />
+            <mat-icon matSuffix (click)="showPassword = !showPassword">{{
+              showPassword ? 'visibility' : 'visibility_off'
+            }}</mat-icon>
+            <mat-error *ngIf="form.get('password').hasError('required')"
+              >Password is required</mat-error
+            >
+          </mat-form-field>
+
+          <div class="fx-row">
+            <button
+              [disabled]="form.invalid || form.disabled"
+              mat-raised-button
+              class="btn_submit"
+            >
+              Submit
+            </button>
+            <button
+              type="button"
+              mat-stroked-button
+              class="btn_cancel"
+              (click)="cancelSubmit()"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

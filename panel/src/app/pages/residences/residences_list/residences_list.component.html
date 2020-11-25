@@ -1,0 +1,59 @@
+<div class="app-main__inner">
+  <app-page_title
+    (onIconClicked)="openDialog(null, 'ADD')"
+    icon="pe-7s-id"
+    title="Residences"
+    subtitle="Data Kecamatan"
+  >
+    <app-finder (onKeyUp)="applyFilter($event)"></app-finder>
+  </app-page_title>
+
+  <!-- no item placeholder -->
+  <div class="ph-noitem" *ngIf="!dataSource">Item kosong</div>
+
+  <div class="main">
+    <!-- TABLE OF RESIDENCES -->
+    <table
+      mat-table
+      matSort
+      [dataSource]="dataSource"
+      class="table-striped table-hover"
+    >
+      <!-- postalCode field -->
+      <ng-container matColumnDef="postalCode">
+        <th mat-header-cell mat-sort-header *matHeaderCellDef>Kode Pos</th>
+        <td mat-cell *matCellDef="let row">{{ row.postalCode }}</td>
+      </ng-container>
+
+      <!-- name field -->
+      <ng-container matColumnDef="name">
+        <th *matHeaderCellDef mat-header-cell mat-sort-header>
+          Nama Kecamatan
+        </th>
+        <td mat-cell *matCellDef="let row">{{ row.name | uppercase }}</td>
+      </ng-container>
+
+      <!-- Action field -->
+      <ng-container matColumnDef="action">
+        <th mat-header-cell *matHeaderCellDef>###</th>
+        <td mat-cell *matCellDef="let row">
+          <app-menu_actions
+            [selectedId]="row._id"
+            (onClickedShow)="openDialog($event, 'SHOW')"
+            [canEdit]="isRoot"
+            (onClickedEdit)="openDialog($event, 'EDIT')"
+            [canDelete]="isRoot"
+            (onClickedDelete)="deleteResidence($event)"
+          ></app-menu_actions>
+        </td>
+      </ng-container>
+
+      <!-- displayedColumns -->
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+
+    <!-- paginator -->
+    <mat-paginator [pageSizeOptions]="[10, 50, 100]"></mat-paginator>
+  </div>
+</div>

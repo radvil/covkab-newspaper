@@ -1,0 +1,41 @@
+<div class="app-main__inner">
+  <!-- PAGE TITLE -->
+  <app-page_title
+    icon="pe-7s-photo"
+    title="Portfolios"
+    subtitle="Kumpulan Portofolio"
+    (onIconClicked)="addSlide()"
+  ></app-page_title>
+
+  <!-- spinner -->
+  <div class="spinner-container" *ngIf="loading$ | async">
+    <mat-spinner></mat-spinner>
+  </div>
+  <!-- no item placeholder -->
+  <div class="ph-noitem" *ngIf="!(slides$ | async).length">Item kosong</div>
+
+  <!-- Content -->
+  <div class="row" *ngIf="slides$ | async">
+    <div *ngFor="let slide of slides$ | async" class="img-card col-md-4">
+      <mat-card>
+        <img
+          mat-card-image
+          (click)="editSlide(slide._id)"
+          [src]="slide.image"
+          [alt]="slide.caption"
+        />
+        <mat-card-content>
+          <span class="card-title">{{ slide.caption }}</span>
+        </mat-card-content>
+        <mat-card-actions align="end">
+          <button mat-icon-button (click)="deleteSlide(slide?._id)">
+            <mat-icon matTooltip="DELETE PORTFOLIO">delete</mat-icon>&nbsp;
+          </button>
+          <button mat-icon-button (click)="editSlide(slide?._id)">
+            <mat-icon matTooltip="EDIT PORTFOLIO">edit</mat-icon>&nbsp;
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>

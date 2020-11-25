@@ -1,0 +1,6 @@
+node_modules
+api/node_modules
+client/node_modules
+client/src/environments
+panel/node_modules
+panel/src/environments

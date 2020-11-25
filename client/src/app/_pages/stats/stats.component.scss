@@ -1,0 +1,138 @@
+/* --------- heading --------- */
+
+.heading-section {
+  text-align: center;
+}
+
+.heading-section h1 {
+  font-size: 58px;
+}
+
+.heading-section h2 {
+  margin-top: 30px;
+
+  @media (max-width: 777px) {
+    margin-top: 10px;
+  }
+}
+
+.title {
+  padding: 20px 100px 0 100px;
+
+  @media (max-width: 777px) {
+    padding: 20px 20px 0 20px;
+  }
+}
+
+.container {
+  padding: 20px 100px;
+
+  @media (max-width: 777px) {
+    padding: 20px 10px;
+    // font-weight: 300;
+  }
+}
+
+.finder {
+  mat-form-field {
+    width: 100%;
+  }
+}
+
+table {
+  width: 100%;
+  box-shadow: 0px 0px 4px 1px #00000033;
+
+  // small device
+  @media (max-width: 777px) {
+    .pc {
+      display: none;
+    }
+    th,
+    td {
+      font-size: 14px;
+    }
+  }
+}
+
+// reset;
+td.mat-cell,
+td.mat-footer-cell,
+th.mat-header-cell {
+  // border-bottom-style: none;
+  padding: 0 7px;
+}
+th.mat-header-cell:last-of-type,
+td.mat-cell:last-of-type,
+td.mat-footer-cell:last-of-type {
+  padding-right: unset;
+  width: unset; // unnecessary;
+}
+
+// dailyStats
+.x-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &.card {
+    height: 50px;
+    background-color: #ffffff;
+    // box-shadow: 0px 0px 4px 1px #00000033;
+    font-weight: 500;
+  }
+
+  &:nth-child(1), &:nth-child(2) {
+    background-color: #222222;
+    color: white;
+  }
+  &:nth-child(4) {
+    background-color: #c71212;
+    color: white;
+  }
+  &:nth-child(5) {
+    background-color: #6ab7ff;
+    color: black;
+  }
+  &:nth-child(6) {
+    background-color: #12c739;
+    color: white;
+  }
+  &:nth-child(7) {
+    background-color: #424242;
+    color: white;
+  }
+  &:nth-child(8) {
+    background-color: #32ffb1;
+    color: black;
+  }
+  &:nth-child(9) {
+    background-color: #d1d1d1;
+    color: black;
+  }
+  &:nth-child(10) {
+    background-color: #fc4a4a;
+    color: black;
+  }
+  &:nth-child(11) {
+    background-color: #2ff56b;
+    color: black;
+  }
+  &:nth-child(12) {
+    background-color: #dbdbdb;
+    color: black;
+  }
+  &:nth-child(13) {
+    background-color: #fffb2a;
+    color: black;
+  }
+}
+.x-col-8 {
+  flex: 8;
+}
+.x-col-4 {
+  flex: 4;
+}
+.ml-2 {
+  margin-left: 20px;
+}

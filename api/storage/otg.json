@@ -1,0 +1,1470 @@
+﻿{
+  "doc": [
+    {
+      "no": "1",
+      "name": "Lina",
+      "age ": "9",
+      "gender": "Perempuan",
+      "address": "Desa Tongauna, Kec. Ueesi",
+      "history": "Dzulfikar Prakosa",
+      "watchedAt": "5 Mei - 26 Mei 2020",
+      "detail": "Teman Mengaji",
+      "result": "Rapid Tes 2x Nonreaktif"
+    },
+    {
+      "no": "2",
+      "name": "Awaludin",
+      "age ": "30",
+      "gender": "Laki-Laki",
+      "address": "Desa Tongauna, Kec. Ueesi",
+      "history": "Juli Tridianto",
+      "watchedAt": "5 Mei - 26 Mei 2020",
+      "result": "Rapid Tes 2x Nonreaktif"
+    },
+    {
+      "no": "3",
+      "name": "Jupri",
+      "age ": "42",
+      "gender": "Laki-Laki",
+      "address": "Desa Tongauna, Kec. Ueesi",
+      "history": "Juli Tridianto",
+      "watchedAt": "5 Mei - 26 Mei 2020",
+      "result": "Rapid Tes 2x Nonreaktif"
+    },
+    {
+      "no": "4",
+      "name": "Alvi Hikmah",
+      "age ": "34",
+      "gender": "Perempuan",
+      "address": "Desa Tongauna, Kec. Ueesi",
+      "history": "Dzulfikar Prakosa",
+      "watchedAt": "5 Mei - 26 Mei 2020",
+      "result": "Rapid Tes 2x Nonreaktif"
+    },
+    {
+      "no": "5",
+      "name": "Nasila",
+      "age ": "9",
+      "gender": "Perempuan",
+      "address": "Desa Tongauna, Kec. Ueesi",
+      "history": "Dzulfikar Prakosa",
+      "watchedAt": "5 Mei - 26 Mei 2020",
+      "detail": "Teman Mengaji",
+      "result": "Rapid Tes 2x Nonreaktif"
+    },
+    {
+      "no": "6",
+      "name": "Miftahul Jannah",
+      "age ": "12",
+      "gender": "Perempuan",
+      "address": "Desa Tongauna, Kec. Ueesi",
+      "history": "Dzulfikar Prakosa",
+      "watchedAt": "5 Mei - 26 Mei 2020",
+      "detail": "Teman Mengaji",
+      "result": "Rapid Tes 2x Nonreaktif"
+    },
+    {
+      "no": "7",
+      "name": "Haeni",
+      "age ": "12",
+      "gender": "Perempuan",
+      "address": "Desa Tongauna, Kec. Ueesi",
+      "history": "Dzulfikar Prakosa",
+      "watchedAt": "5 Mei - 26 Mei 2020",
+      "detail": "Teman Mengaji",
+      "result": "Rapid Tes 2x Nonreaktif"
+    },
+    {
+      "no": "8",
+      "name": "Ayunda",
+      "age ": "7",
+      "gender": "Perempuan",
+      "address": "Desa Tongauna, Kec. Ueesi",
+      "history": "Dzulfikar Prakosa",
+      "watchedAt": "5 Mei - 26 Mei 2020",
+      "detail": "Teman Mengaji",
+      "result": "Rapid Tes 2x Nonreaktif"
+    },
+    {
+      "no": "9",
+      "name": "Neti",
+      "age ": "9",
+      "gender": "Perempuan",
+      "address": "Desa Tongauna, Kec. Ueesi",
+      "history": "Dzulfikar Prakosa",
+      "watchedAt": "5 Mei - 26 Mei 2020",
+      "detail": "Teman Mengaji",
+      "result": "Rapid Tes 2x Nonreaktif"
+    },
+    {
+      "no": "10",
+      "name": "Dwi Adeva Putri",
+      "age ": "5",
+      "gender": "Perempuan",
+      "address": "Desa Tongauna, Kec. Ueesi",
+      "history": "Dzulfikar Prakosa",
+      "watchedAt": "5 Mei - 26 Mei 2020",
+      "detail": "Teman Mengaji",
+      "result": "Rapid Tes 2x Nonreaktif"
+    },
+    {
+      "no": "11",
+      "name": "Novelia Flaurentika",
+      "age ": "7",
+      "gender": "Perempuan",
+      "address": "Desa Tongauna, Kec. Ueesi",
+      "history": "Dzulfikar Prakosa",
+      "watchedAt": "5 Mei - 26 Mei 2020",
+      "detail": "Teman Mengaji",
+      "result": "Rapid Tes 2x Nonreaktif"
+    },
+    {
+      "no": "12",
+      "name": "Septi Hasanah",
+      "age ": "10",
+      "gender": "Perempuan",
+      "address": "Desa Tongauna, Kec. Ueesi",
+      "history": "Dzulfikar Prakosa",
+      "watchedAt": "5 Mei - 26 Mei 2020",
+      "detail": "Teman Mengaji",
+      "result": "Rapid Tes 2x Nonreaktif"
+    },
+    {
+      "no": "13",
+      "name": "Hj.  baharia",
+      "age ": "69",
+      "gender": "perempuan",
+      "address": "Desa Nelombu,  Kec. Mowewe",
+      "history": "Muh.  Ramadan",
+      "watchedAt": "11 Mei - 25 Mei 2020",
+      "detail": "Kontak serumah"
+    },
+    {
+      "no": "14",
+      "name": "Abd.  Muin",
+      "age ": "79",
+      "gender": "Laki-Laki",
+      "address": "Desa Nelombu,  Kec. Mowewe",
+      "history": "Muh.  Ramadan",
+      "watchedAt": "11 Mei - 25 Mei 2020",
+      "detail": "Kontak serumah"
+    },
+    {
+      "no": "15",
+      "name": "Idris",
+      "age ": "40",
+      "gender": "laki - laki",
+      "address": "Desa Nelombu,  Kec. Mowewe",
+      "history": "Muh.  Ramadan",
+      "watchedAt": "11 Mei - 25 Mei 2020",
+      "detail": "Tetangga / saudara"
+    },
+    {
+      "no": "16",
+      "name": "suharni",
+      "age ": "35",
+      "gender": "perempuan",
+      "address": "Desa Nelombu,  Kec. Mowewe",
+      "history": "Muh.  Ramadan",
+      "watchedAt": "11 Mei - 25 Mei 2020",
+      "detail": "Tetangga / ipar"
+    },
+    {
+      "no": "17",
+      "name": "Zaira Az Zahra",
+      "age ": "11",
+      "gender": "perempuan",
+      "address": "Desa Nelombu,  Kec. Mowewe",
+      "history": "Muh.  Ramadan",
+      "watchedAt": "11 Mei - 25 Mei 2020",
+      "detail": "Tetangga / ponakan"
+    },
+    {
+      "no": "18",
+      "name": "Muh. Syqar Al Fizar",
+      "age ": "3",
+      "gender": "laki - laki",
+      "address": "Desa Nelombu,  Kec. Mowewe",
+      "history": "Muh.  Ramadan",
+      "watchedAt": "11 Mei - 25 Mei 2020",
+      "detail": "Tetangga / ponakan"
+    },
+    {
+      "no": "19",
+      "name": "Lalu Hamzan Wadi",
+      "age ": "25",
+      "gender": "laki-laki",
+      "address": "Desa Nelombu,  Kec. Mowewe",
+      "history": "Muh.  Ramadan",
+      "watchedAt": "11 Mei - 25 Mei 2020",
+      "detail": "Teman/menjemput dipelabuhan"
+    },
+    {
+      "no": "20",
+      "name": "Milma",
+      "age ": "53",
+      "gender": "Perempuan",
+      "address": "Desa Nelombu,  Kec. Mowewe",
+      "history": "Muh.  Ramadan",
+      "watchedAt": "11 Mei - 25 Mei 2020",
+      "detail": "org tua teman / bincang-bincang"
+    },
+    {
+      "no": "21",
+      "name": "M. Fairuz N",
+      "age ": "12",
+      "gender": "Laki-Laki",
+      "address": "Desa Aere, Kec. Aere",
+      "history": "Ardiansyah",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "22",
+      "name": "Maulana",
+      "age ": "15",
+      "gender": "Laki-Laki",
+      "address": "Desa Aere, Kec. Aere",
+      "history": "Ardiansyah",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "23",
+      "name": "Hatija",
+      "age ": "85",
+      "gender": "Perempuan",
+      "address": "Desa Aere, Kec. Aere",
+      "history": "Abd. Musawwir",
+      "watchedAt": "11 Mei - 25 Mei 2020",
+      "detail": "Silaturahmi"
+    },
+    {
+      "no": "24",
+      "name": "H. Nasir",
+      "age ": "53",
+      "gender": "Laki-Laki",
+      "address": "Desa Aere, Kec. Aere",
+      "history": "Abd. Musawwir",
+      "watchedAt": "11 Mei - 25 Mei 2020",
+      "detail": "Shalat bersama"
+    },
+    {
+      "no": "25",
+      "name": "Suryadin",
+      "age ": "42",
+      "gender": "Laki-Laki",
+      "address": "Desa Aere, Kec. Aere",
+      "history": "Abd. Musawwir",
+      "watchedAt": "11 Mei - 25 Mei 2020",
+      "detail": "Shalat bersama"
+    },
+    {
+      "no": "26",
+      "name": "Irma Rahayu",
+      "gender": "Perempuan",
+      "address": "Desa Ulundoro, Kec. Aere",
+      "history": "Ardi/Musawir",
+      "watchedAt": "11 Mei - 25 Mei 2020",
+      "detail": "Nakes Skrining"
+    },
+    {
+      "no": "27",
+      "name": "Syamsul Mansyur",
+      "gender": "Laki-Laki",
+      "address": "Desa Ulundoro, Kec. Aere",
+      "history": "Ardi/Musawir",
+      "watchedAt": "11 Mei - 25 Mei 2020",
+      "detail": "Nakes Skrining"
+    },
+    {
+      "no": "28",
+      "name": "Rismasari",
+      "gender": "Perempuan",
+      "address": "Desa Ulundoro, Kec. Aere",
+      "history": "Ardi/Musawir",
+      "watchedAt": "11 Mei - 25 Mei 2020",
+      "detail": "Nakes Skrining"
+    },
+    {
+      "no": "29",
+      "name": "Aqsanur",
+      "gender": "Laki-Laki",
+      "address": "Desa Ulundoro, Kec. Aere",
+      "history": "Ardi/Musawir",
+      "watchedAt": "11 Mei - 25 Mei 2020",
+      "detail": "Nakes Skrining"
+    },
+    {
+      "no": "30",
+      "name": "Ratnasari",
+      "gender": "Perempuan",
+      "address": "Desa Ulundoro, Kec. Aere",
+      "history": "Ardi/Musawir",
+      "watchedAt": "11 Mei - 25 Mei 2020",
+      "detail": "Nakes Skrining"
+    },
+    {
+      "no": "31",
+      "name": "Aminah",
+      "age ": "60",
+      "gender": "Perempuan",
+      "address": "Desa Penanggootu, Kec. Lambandia",
+      "history": "Sholehuddin",
+      "watchedAt": "11 Mei - 25 Mei 2020",
+      "detail": "Kontak serumah"
+    },
+    {
+      "no": "32",
+      "name": "H. Dahlan",
+      "age ": "61",
+      "gender": "Laki-Laki",
+      "address": "Desa Penanggootu, Kec. Lambandia",
+      "history": "Sholehuddin",
+      "watchedAt": "11 Mei - 25 Mei 2020",
+      "detail": "Kontak serumah"
+    },
+    {
+      "no": "33",
+      "name": "Sabaruddin",
+      "age ": "27",
+      "gender": "Laki-Laki",
+      "address": "Desa Penanggootu, Kec. Lambandia",
+      "history": "Sholehuddin",
+      "watchedAt": "11 Mei - 25 Mei 2020",
+      "detail": "Kontak serumah"
+    },
+    {
+      "no": "34",
+      "name": "Hadrawi",
+      "age ": "35",
+      "gender": "Laki-Laki",
+      "address": "Desa lambandia, Kec. Lambandia",
+      "history": "Sholehuddin",
+      "watchedAt": "11 Mei - 25 Mei 2020",
+      "detail": "silaturahmi"
+    },
+    {
+      "no": "35",
+      "name": "Sapriani",
+      "age ": "35",
+      "gender": "Perempuan",
+      "address": "Desa lambandia, Kec. Lambandia",
+      "history": "Sholehuddin",
+      "watchedAt": "11 Mei - 25 Mei 2020",
+      "detail": "silaturahmi"
+    },
+    {
+      "no": "36",
+      "name": "Miftahul jannah",
+      "age ": "5",
+      "gender": "Perempuan",
+      "address": "Desa lambandia, Kec. Lambandia",
+      "history": "Sholehuddin",
+      "watchedAt": "11 Mei - 25 Mei 2020",
+      "detail": "silaturahmi"
+    },
+    {
+      "no": "37",
+      "name": "Adnan yusuf",
+      "age ": "4",
+      "gender": "Laki-Laki",
+      "address": "Desa lambandia, Kec. Lambandia",
+      "history": "Sholehuddin",
+      "watchedAt": "11 Mei - 25 Mei 2020",
+      "detail": "silaturahmi"
+    },
+    {
+      "no": "38",
+      "name": "Cahaya Imanuddin",
+      "age ": "16",
+      "gender": "Laki-Laki",
+      "address": "Kel. Welala, Kec. Ladongi",
+      "history": "Sholehuddin",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "39",
+      "name": "Muklish",
+      "age ": "18",
+      "gender": "Laki-Laki",
+      "address": "Kel. Welala, Kec. Ladongi",
+      "history": "Sholehuddin",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "40",
+      "name": "Muh. Sarif",
+      "age ": "19",
+      "gender": "Laki-Laki",
+      "address": "Kel. Welala, Kec. Ladongi",
+      "history": "Sholehuddin",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "41",
+      "name": "Syarif Hidayatullah",
+      "age ": "20",
+      "gender": "Laki-Laki",
+      "address": "Kel. Welala, Kec. Ladongi",
+      "history": "Sholehuddin",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "42",
+      "name": "Wahid Hasyim",
+      "age ": "31",
+      "gender": "Laki-Laki",
+      "address": "Desa Lembah Subur, Kec. Dangia",
+      "history": "Abd. Rahman",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "43",
+      "name": "Syamsul",
+      "age ": "55",
+      "gender": "L",
+      "address": "Ling. II Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "44",
+      "name": "Khadijah",
+      "age ": "52",
+      "gender": "P",
+      "address": "Ling. II Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "45",
+      "name": "Heryanto",
+      "age ": "33",
+      "gender": "L",
+      "address": "Ling. II Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "46",
+      "name": "Rabiah Al Adwiah",
+      "age ": "27",
+      "gender": "P",
+      "address": "Ling. II Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "47",
+      "name": "Muhite",
+      "age ": "66",
+      "gender": "L",
+      "address": "Ling. II Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "48",
+      "name": "Syamsiah",
+      "age ": "64",
+      "gender": "P",
+      "address": " ",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "49",
+      "name": "Burhan",
+      "age ": "24",
+      "gender": "L",
+      "address": "Ling. II Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "50",
+      "name": "Abd. Haris",
+      "age ": "17",
+      "gender": "L",
+      "address": "Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "51",
+      "name": "Muh. Agus",
+      "age ": "51",
+      "gender": "L",
+      "address": "Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "52",
+      "name": "Ansori Togala",
+      "age ": "50",
+      "gender": "L",
+      "address": "Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "53",
+      "name": "Gali",
+      "age ": "23",
+      "gender": "L",
+      "address": "Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "54",
+      "name": "Noval",
+      "age ": "20",
+      "gender": "L",
+      "address": "Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "55",
+      "name": "Sultan",
+      "gender": "L",
+      "address": "Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "56",
+      "name": "Muh. Idris",
+      "age ": "31",
+      "gender": "L",
+      "address": "Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "57",
+      "name": "H. Baharuddin",
+      "age ": "57",
+      "gender": "L",
+      "address": "Ling. II Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "58",
+      "name": "Nur Wafiq Azizah",
+      "age ": "18",
+      "gender": "P",
+      "address": "Ling. II Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "59",
+      "name": "Kamal Nur Ilmi",
+      "age ": "20",
+      "gender": "L",
+      "address": "Ling .I Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "60",
+      "name": "Nurtian",
+      "age ": "19",
+      "gender": "P",
+      "address": "Ling. III Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "61",
+      "name": "Sapri",
+      "age ": "37",
+      "gender": "L",
+      "address": "Ling. I Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "62",
+      "name": "Nursyamsuriani",
+      "age ": "30",
+      "gender": "P",
+      "address": "Kel. Atula",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "63",
+      "name": "Dewi Julia",
+      "age ": "19",
+      "gender": "P",
+      "address": "Ling. II Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "64",
+      "name": "Sardi Idris",
+      "age ": "45",
+      "gender": "L",
+      "address": "Ling. I Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "65",
+      "name": "Surahman",
+      "age ": "33",
+      "gender": "L",
+      "address": "Ling. I Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "66",
+      "name": "Alias",
+      "age ": "30",
+      "gender": "L",
+      "address": "Ling. IV Kel. Ladongi ",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "67",
+      "name": "Rada",
+      "age ": "20",
+      "gender": "P",
+      "address": "Ling. IV Kel. Ladongi ",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "68",
+      "name": "Wira",
+      "gender": "L",
+      "address": "Ling. IV Kel. Ladongi ",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "69",
+      "name": "Ndoi",
+      "gender": "L",
+      "address": "Ling. IV Kel. Ladongi ",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "70",
+      "name": "Andhy Lam Nor",
+      "age ": "33",
+      "gender": "L",
+      "address": "Ling. I Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "71",
+      "name": "Sakinah",
+      "age ": "30",
+      "gender": "P",
+      "address": "Ling. I Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "72",
+      "name": "Keenan Andy Alkhalify",
+      "age ": "4",
+      "gender": "L",
+      "address": "Ling. I Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "73",
+      "name": "El Qahtan Multazam",
+      "age ": "1",
+      "gender": "L",
+      "address": "Ling. I Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "74",
+      "name": "Bambang Sutiana",
+      "age ": "28",
+      "gender": "L",
+      "address": "Kel. Rara",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "75",
+      "name": "Zidan",
+      "age ": "1",
+      "gender": "L",
+      "address": "Ling. II Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "76",
+      "name": "Ismail Iskandar",
+      "age ": "40",
+      "gender": "L",
+      "address": "Ling. II Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "77",
+      "name": "Sukmawati .S",
+      "age ": "34",
+      "gender": "P",
+      "address": "Ling. II Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "78",
+      "name": "Nihla",
+      "age ": "13",
+      "gender": "P",
+      "address": "Ling. II Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "79",
+      "name": "Fadil",
+      "age ": "8",
+      "gender": "L",
+      "address": "Ling. II Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "80",
+      "name": "Umar",
+      "age ": "47",
+      "gender": "L",
+      "address": "Ling .IV Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "81",
+      "name": "Roswana",
+      "age ": "44",
+      "gender": "P",
+      "address": "Ling .IV Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "82",
+      "name": "Ratna",
+      "age ": "21",
+      "gender": "P",
+      "address": "Ling .IV Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "83",
+      "name": "Nuril",
+      "age ": "14",
+      "gender": "P",
+      "address": "Ling .IV Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "84",
+      "name": "Ikbal",
+      "age ": "30",
+      "gender": "L",
+      "address": "Ling. III Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "85",
+      "name": "Citra",
+      "age ": "25",
+      "gender": "P",
+      "address": "Ling. III Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "86",
+      "name": "Aysila",
+      "age ": "1",
+      "gender": "P",
+      "address": "Ling. III Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "87",
+      "name": "Ririn Aulia Fatma",
+      "age ": "20",
+      "gender": "P",
+      "address": "Kel. Atula",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "88",
+      "name": " Muh. Rafli",
+      "age ": "16",
+      "gender": "L",
+      "address": "Kel. Atula",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "89",
+      "name": "Sudarmin",
+      "age ": "54",
+      "gender": "L",
+      "address": "Ling. II Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "90",
+      "name": "St. Maimunah",
+      "age ": "53",
+      "gender": "P",
+      "address": "Ling. II Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "91",
+      "name": "Nur Fadilah",
+      "age ": "16",
+      "gender": "P",
+      "address": "Ling. II Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "92",
+      "name": "Jusran",
+      "age ": "24",
+      "gender": "L",
+      "address": "Ling. II Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "93",
+      "name": "Nur Safitri",
+      "age ": "24",
+      "gender": "P",
+      "address": "Ling. II Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "94",
+      "name": "Uli",
+      "age ": "27",
+      "gender": "L",
+      "address": "Ling. II Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "95",
+      "name": "Miftahuljannah",
+      "age ": "8",
+      "gender": "P",
+      "address": "Ling. II Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "96",
+      "name": "Afifah",
+      "age ": "1",
+      "gender": "P",
+      "address": "Ling. II Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "97",
+      "name": "Nurqitabil Asyirillah /nabila",
+      "age ": "12",
+      "gender": "P",
+      "address": "Ling. II Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "98",
+      "name": "Dian",
+      "gender": "P",
+      "address": "Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "99",
+      "name": "Suri",
+      "age ": "22",
+      "gender": "P",
+      "address": "Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "100",
+      "name": "Ria/ Jumriah",
+      "age ": "16",
+      "gender": "P",
+      "address": "Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "101",
+      "name": "Cindi",
+      "age ": "8",
+      "gender": "P",
+      "address": "Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "102",
+      "name": "Akbar",
+      "age ": "29",
+      "gender": "L",
+      "address": "Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "103",
+      "name": "Baddo",
+      "age ": "18",
+      "gender": "L",
+      "address": "Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "104",
+      "name": "Acung",
+      "age ": "24",
+      "gender": "L",
+      "address": "Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "105",
+      "name": "Ijul",
+      "gender": " ",
+      "address": "Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "106",
+      "name": "Iksan Saputra",
+      "gender": "L",
+      "address": "Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "107",
+      "name": "Irfan Adami / una",
+      "gender": "L",
+      "address": "Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "108",
+      "name": "Edi",
+      "gender": "L",
+      "address": "Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "109",
+      "name": "Eko",
+      "gender": "L",
+      "address": "Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "110",
+      "name": "Jimmi",
+      "gender": "L",
+      "address": "Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "111",
+      "name": "Kun",
+      "gender": "L",
+      "address": "Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "112",
+      "name": "Wahono",
+      "gender": "L",
+      "address": "Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "113",
+      "name": "Siswo",
+      "gender": "L",
+      "address": "Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "114",
+      "name": "Tris",
+      "gender": "L",
+      "address": "Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "115",
+      "name": "Ida Samad",
+      "age ": "46",
+      "gender": "P",
+      "address": "Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "116",
+      "name": "Muh Fajar",
+      "age ": "19",
+      "gender": "L",
+      "address": "Ling. II Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "117",
+      "name": "Maka",
+      "age ": "50",
+      "gender": "L",
+      "address": "Desa Wungguloko",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "118",
+      "name": "Amir",
+      "age ": "63",
+      "gender": "L",
+      "address": "Kel. II Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "119",
+      "name": "Jumarlin",
+      "age ": "41",
+      "gender": "L",
+      "address": "Kel. IV Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "120",
+      "name": "Ahmad Ramadhan",
+      "age ": "31",
+      "gender": "L",
+      "address": "Kel. I Kel. Ladongi",
+      "history": "Abd. Rahman ",
+      "watchedAt": "11 Mei - 25 Mei 2020"
+    },
+    {
+      "no": "121",
+      "name": "Masturjono",
+      "age ": "63",
+      "gender": "L",
+      "address": "Desa Penanggoosi",
+      "history": "Rahman",
+      "watchedAt": "19 Mei - 3 Juni 2020",
+      "result": "Rapid Tes I : Non-Reaktif"
+    },
+    {
+      "no": "122",
+      "name": "Ida",
+      "age ": "58",
+      "gender": "P",
+      "address": "Desa Penanggoosi",
+      "history": "Rahman",
+      "watchedAt": "19 Mei - 3 Juni 2020",
+      "result": "Rapid Tes I : Non-Reaktif"
+    },
+    {
+      "no": "123",
+      "name": "Yoga Adi Turyono",
+      "age ": "36",
+      "gender": "L",
+      "address": "Desa Penanggoosi",
+      "history": "Rahman",
+      "watchedAt": "19 Mei - 3 Juni 2020",
+      "result": "Rapid Tes I : Non-Reaktif"
+    },
+    {
+      "no": "124",
+      "name": "Rohani",
+      "age ": "35",
+      "gender": "P",
+      "address": "Desa Penanggoosi",
+      "history": "Rahman",
+      "watchedAt": "19 Mei - 3 Juni 2020",
+      "result": "Rapid Tes I : Non-Reaktif"
+    },
+    {
+      "no": "125",
+      "name": "Giano Muhammad Ashar",
+      "age ": "8",
+      "gender": "L",
+      "address": "Desa Penanggoosi",
+      "history": "Rahman",
+      "watchedAt": "19 Mei - 3 Juni 2020",
+      "result": "Rapid Tes I : Non-Reaktif"
+    },
+    {
+      "no": "126",
+      "name": "Muhammad Hafiz Hidayat",
+      "age ": "4",
+      "gender": "L",
+      "address": "Desa Penanggoosi",
+      "history": "Rahman",
+      "watchedAt": "19 Mei - 3 Juni 2020",
+      "result": "Rapid Tes I : Non-Reaktif"
+    },
+    {
+      "no": "127",
+      "name": "Hj. Sitti Mardiana",
+      "age ": "60",
+      "gender": "P",
+      "address": "Kel.Penanggo Jaya",
+      "history": "Rahman",
+      "watchedAt": "19 Mei - 3 Juni 2020",
+      "result": "Rapid Tes I : Non-Reaktif"
+    },
+    {
+      "no": "128",
+      "name": "Ambo Tua",
+      "age ": "62",
+      "gender": "L",
+      "address": "Kel.Penanggo Jaya",
+      "history": "Rahman",
+      "watchedAt": "19 Mei - 3 Juni 2020",
+      "result": "Rapid Tes I : Non-Reaktif"
+    },
+    {
+      "no": "129",
+      "name": "Hemansyah",
+      "age ": "38",
+      "gender": "L",
+      "address": "Desa Lambandia",
+      "history": "Rahman",
+      "watchedAt": "19 Mei - 3 Juni 2020",
+      "result": "Rapid Tes I : Non-Reaktif"
+    },
+    {
+      "no": "130",
+      "name": "Suprianto",
+      "age ": "27",
+      "gender": "L",
+      "address": "Desa Lambandia",
+      "history": "Rahman",
+      "watchedAt": "19 Mei - 3 Juni 2020",
+      "result": "Rapid Tes I : Non-Reaktif"
+    },
+    {
+      "no": "131",
+      "name": "Andi Siska Dewi",
+      "age ": "25",
+      "gender": "P",
+      "address": "Desa Lambandia",
+      "history": "Rahman",
+      "watchedAt": "19 Mei - 3 Juni 2020",
+      "result": "Rapid Tes I : Non-Reaktif"
+    },
+    {
+      "no": "132",
+      "name": "Lulu Juliantika",
+      "age ": "2.1",
+      "gender": "P",
+      "address": "Desa Lambandia",
+      "history": "Rahman",
+      "watchedAt": "19 Mei - 3 Juni 2020",
+      "result": "Rapid Tes I : Non-Reaktif"
+    },
+    {
+      "no": "133",
+      "name": "Armila",
+      "age ": "27",
+      "gender": "P",
+      "address": "Desa Lambandia",
+      "history": "Rahman",
+      "watchedAt": "19 Mei - 3 Juni 2020",
+      "result": "Rapid Tes I : Non-Reaktif"
+    },
+    {
+      "no": "134",
+      "name": "Adibrata Arka Bagaskara",
+      "age ": "2.6",
+      "gender": "L",
+      "address": "Desa Lambandia",
+      "history": "Rahman",
+      "watchedAt": "19 Mei - 3 Juni 2020",
+      "result": "Rapid Tes I : Non-Reaktif"
+    },
+    {
+      "no": "135",
+      "name": "Baba",
+      "age ": "60",
+      "gender": "L",
+      "address": "Kel. Rate-Rate",
+      "history": "Rahman",
+      "watchedAt": "19 Mei - 3 Juni 2020",
+      "result": "Rapid Tes I : Non-Reaktif"
+    },
+    {
+      "no": "136",
+      "name": "Misna",
+      "age ": "45",
+      "gender": "P",
+      "address": "Kel. Rate-Rate",
+      "history": "Rahman",
+      "watchedAt": "19 Mei - 3 Juni 2020",
+      "result": "Rapid Tes I : Non-Reaktif"
+    },
+    {
+      "no": "137",
+      "name": "Ervina",
+      "age ": "15",
+      "gender": "P",
+      "address": "Kel. Rate-Rate",
+      "history": "Rahman",
+      "watchedAt": "19 Mei - 3 Juni 2020",
+      "result": "Rapid Tes I : Non-Reaktif"
+    },
+    {
+      "no": "138",
+      "name": "Aqilla sahra",
+      "age ": "6",
+      "gender": "P",
+      "address": "Kel. Rate-Rate",
+      "history": "Rahman",
+      "watchedAt": "19 Mei - 3 Juni 2020",
+      "result": "Rapid Tes I : Non-Reaktif"
+    },
+    {
+      "no": "139",
+      "name": "Dandi Arwansyah",
+      "age ": "21",
+      "gender": "L",
+      "address": "Kel. Rate-Rate",
+      "history": "Rahman",
+      "watchedAt": "19 Mei - 3 Juni 2020",
+      "result": "Rapid Tes I : Non-Reaktif"
+    },
+    {
+      "no": "140",
+      "name": "Nur aprianti",
+      "age ": "27",
+      "gender": "p",
+      "address": "Kel. Rate-Rate",
+      "history": "Rahman",
+      "watchedAt": "19 Mei - 3 Juni 2020",
+      "result": "Rapid Tes I : Non-Reaktif"
+    },
+    {
+      "no": "141",
+      "name": "Arzil",
+      "age ": "4",
+      "gender": "L",
+      "address": "Kel. Rate-Rate",
+      "history": "Rahman",
+      "watchedAt": "19 Mei - 3 Juni 2020",
+      "result": "Rapid Tes I : Non-Reaktif"
+    },
+    {
+      "no": "142",
+      "name": "Quinza",
+      "age ": "1",
+      "gender": "P",
+      "address": "Kel. Rate-Rate",
+      "history": "Rahman",
+      "watchedAt": "19 Mei - 3 Juni 2020",
+      "result": "Rapid Tes I : Non-Reaktif"
+    },
+    {
+      "no": "143",
+      "name": "Febri arzira",
+      "age ": "21",
+      "gender": "P",
+      "address": "Kel. Rate-Rate",
+      "history": "Rahman",
+      "watchedAt": "19 Mei - 3 Juni 2020",
+      "result": "Rapid Tes I : Non-Reaktif"
+    },
+    {
+      "no": "144",
+      "name": "Nurhayati",
+      "gender": "P",
+      "address": "Kel. Atula",
+      "history": "Rahman",
+      "watchedAt": "19 Mei - 3 Juni 2020",
+      "result": "Rapid Tes I : Non-Reaktif"
+    },
+    {
+      "no": "145",
+      "name": "Ahmad Alfi. W",
+      "age ": "16",
+      "gender": "L",
+      "address": "Desa Aere",
+      "history": "Indo Tang dan Nur Afiah",
+      "watchedAt": "23 Mei - 6 Juni 2020"
+    },
+    {
+      "no": "146",
+      "name": "Juniati",
+      "age ": "38",
+      "gender": "P",
+      "address": "Desa Aere",
+      "history": "Indo Tang dan Nur Afiah",
+      "watchedAt": "24 Mei - 6 Juni 2020"
+    },
+    {
+      "no": "147",
+      "name": "Nurhafizah",
+      "age ": "9",
+      "gender": "P",
+      "address": "Desa Aere",
+      "history": "Indo Tang dan Nur Afiah",
+      "watchedAt": "25 Mei - 6 Juni 2020"
+    },
+    {
+      "no": "148",
+      "name": "M. Yahya",
+      "age ": "49",
+      "gender": "L",
+      "address": "Desa Aere",
+      "history": "Indo Tang dan Nur Afiah",
+      "watchedAt": "26 Mei - 6 Juni 2020",
+      "detail": "Kontak serumah"
+    },
+    {
+      "no": "149",
+      "name": "Fatimah Azahra",
+      "age ": "5",
+      "gender": "P",
+      "address": "Desa Aere",
+      "history": "Indo Tang dan Nur Afiah",
+      "watchedAt": "27 Mei - 6 Juni 2020",
+      "detail": "Kontak serumah"
+    },
+    {
+      "no": "150",
+      "name": "Abdul Rahman",
+      "age ": "7",
+      "gender": "L",
+      "address": "Desa Aere",
+      "history": "Indo Tang dan Nur Afiah",
+      "watchedAt": "28 Mei - 6 Juni 2020",
+      "detail": "Kontak serumah"
+    },
+    {
+      "no": "151",
+      "name": "Akbar Nur",
+      "age ": "24",
+      "gender": "L",
+      "address": "Desa Aere",
+      "history": "Indo Tang dan Nur Afiah",
+      "watchedAt": "29 Mei - 6 Juni 2020",
+      "detail": "Kontak serumah"
+    },
+    {
+      "no": "152",
+      "name": "Musdalifah",
+      "age ": "23",
+      "gender": "P",
+      "address": "Desa Aere",
+      "history": "Indo Tang dan Nur Afiah",
+      "watchedAt": "30 Mei - 6 Juni 2020",
+      "detail": "Kontak serumah"
+    },
+    {
+      "no": "153",
+      "name": "Ubay",
+      "age ": "3",
+      "gender": "L",
+      "address": "Desa Aere",
+      "history": "Indo Tang dan Nur Afiah",
+      "watchedAt": "31 Mei - 6 Juni 2020"
+    },
+    {
+      "no": "154",
+      "name": "Hj. Nurhayati",
+      "age ": "42",
+      "gender": "P",
+      "address": "Desa Aere",
+      "history": "Indo Tang dan Nur Afiah",
+      "watchedAt": "32 Mei - 6 Juni 2020"
+    },
+    {
+      "no": "155",
+      "name": "H. Arman",
+      "age ": "50",
+      "gender": "L",
+      "address": "Desa Aere",
+      "history": "Indo Tang dan Nur Afiah",
+      "watchedAt": "33 Mei - 6 Juni 2020"
+    },
+    {
+      "no": "156",
+      "name": "H. Madong",
+      "age ": "49",
+      "gender": "L",
+      "address": "Desa Aere",
+      "history": "Indo Tang dan Nur Afiah",
+      "watchedAt": "34 Mei - 6 Juni 2020"
+    },
+    {
+      "no": "157",
+      "name": "H. Yakub",
+      "age ": "70",
+      "gender": "L",
+      "address": "Desa Aere",
+      "history": "Indo Tang dan Nur Afiah",
+      "watchedAt": "35 Mei - 6 Juni 2020"
+    }
+  ]
+}

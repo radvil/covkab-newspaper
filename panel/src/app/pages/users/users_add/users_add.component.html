@@ -1,0 +1,225 @@
+<div class="app-main__inner">
+  <app-page_title
+    icon="pe-7s-users"
+    [title]="pageTitle"
+    [subtitle]="pageSubtitle"
+  ></app-page_title>
+
+  <div class="main card" [ngClass]="idParam ? 'pt-4': null">
+    <div class="btn_delete" *ngIf="idParam">
+      <button mat-flat-button (click)="deleteUser(user?._id)">
+        <mat-icon>delete</mat-icon>&nbsp;Delete
+      </button>
+      <button mat-flat-button (click)="setUpdatePasswordMode()">
+        <mat-icon>edit</mat-icon>&nbsp;Update password
+      </button>
+    </div>
+    <div class="form_space">
+      <form
+        [formGroup]="form"
+        (ngSubmit)="submitForm()"
+        *ngIf="!isUpdatePassword"
+      >
+        <div class="input_space">
+          <div class="fx-row">
+            <!-- name field -->
+            <mat-form-field>
+              <mat-label>Nama</mat-label>
+              <input formControlName="name" matInput placeholder="Name" />
+              <mat-error *ngIf="form.get('name').hasError('required')"
+                >Name is required</mat-error
+              >
+            </mat-form-field>
+
+            <!-- nik field -->
+            <mat-form-field>
+              <mat-label>NIK</mat-label>
+              <input formControlName="nik" matInput placeholder="NIK" />
+              <mat-error *ngIf="form.get('nik').hasError('required')"
+                >NIK is required</mat-error
+              >
+              <mat-error *ngIf="form.get('nik').hasError('minlength')"
+                >Min 11 chars allowed</mat-error
+              >
+              <mat-error *ngIf="form.get('nik').hasError('maxlength')"
+                >Max 16 chars allowed</mat-error
+              >
+            </mat-form-field>
+          </div>
+
+          <div class="fx-row">
+            <!-- phone field -->
+            <mat-form-field>
+              <mat-label>Nomor HP</mat-label>
+              <input formControlName="phone" matInput placeholder="Nomor HP" />
+            </mat-form-field>
+
+            <!-- role field -->
+            <mat-form-field>
+              <mat-label>Role</mat-label>
+              <mat-select formControlName="role">
+                <mat-option *ngFor="let role of roleList" value="{{ role }}">{{
+                  role | uppercase
+                }}</mat-option>
+              </mat-select>
+              <mat-error *ngIf="form.get('role').hasError('required')"
+                >Role is required</mat-error
+              >
+            </mat-form-field>
+          </div>
+
+          <!-- password field -->
+          <mat-form-field *ngIf="form.get('password')">
+            <mat-label>Password</mat-label>
+            <input
+              matInput
+              [type]="showPassword ? 'text' : 'password'"
+              formControlName="password"
+              placeholder="Password"
+            />
+            <mat-icon matSuffix (click)="showPassword = !showPassword">{{
+              showPassword ? 'visibility' : 'visibility_off'
+            }}</mat-icon>
+            <mat-error *ngIf="form.get('password').hasError('required')"
+              >Password is required</mat-error
+            >
+            <mat-error *ngIf="form.get('password').hasError('minlength')"
+              >Min 8 chars allowed</mat-error
+            >
+          </mat-form-field>
+
+          <div class="fx-row">
+            <!-- residence field -->
+            <mat-form-field>
+              <mat-label>Kecamatan</mat-label>
+              <mat-select formControlName="residence">
+                <mat-option *ngFor="let rs of residenceList" value="{{ rs }}">{{
+                  rs | uppercase
+                }}</mat-option>
+              </mat-select>
+              <mat-error *ngIf="form.get('residence').hasError('required')"
+                >Kecamatan is required</mat-error
+              >
+            </mat-form-field>
+
+            <!-- address field -->
+            <mat-form-field appearance="fill">
+              <mat-label>Alamat jalan</mat-label>
+              <textarea
+                matInput
+                formControlName="address"
+                cdkAutoSizeMinRows="1"
+                cdkAutoSizeMaxRows="10"
+                placeholder="Alamat jalan"
+                type="text"
+                style="min-height: 50px;"
+              ></textarea>
+            </mat-form-field>
+          </div>
+
+          <div class="fx-row">
+            <button
+              [disabled]="form.invalid || form.disabled"
+              mat-raised-button
+              class="btn_submit"
+            >
+              Submit
+            </button>
+            <button
+              type="button"
+              mat-stroked-button
+              class="btn_cancel"
+              (click)="cancelSubmit()"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <form
+        [formGroup]="updatePasswordForm"
+        (ngSubmit)="submitUpdatePassword()"
+        *ngIf="isUpdatePassword"
+      >
+        <div class="input_space">
+          <div class="fx-row">
+            <!-- password field -->
+            <mat-form-field>
+              <mat-label>New password</mat-label>
+              <input
+                matInput
+                formControlName="newPassword"
+                [type]="showPassword ? 'text' : 'password'"
+                placeholder="Password"
+              />
+              <mat-icon matSuffix (click)="showPassword = !showPassword">{{
+                showPassword ? 'visibility' : 'visibility_off'
+              }}</mat-icon>
+              <mat-error
+                *ngIf="
+                  updatePasswordForm.get('newPassword').hasError('required')
+                "
+                >Password is required</mat-error
+              >
+              <mat-error
+                *ngIf="
+                  updatePasswordForm.get('newPassword').hasError('minlength')
+                "
+                >Minimum 8 characters!</mat-error
+              >
+            </mat-form-field>
+
+            <!-- confirm password field -->
+            <mat-form-field>
+              <mat-label>Confirm new password</mat-label>
+              <input
+                matInput
+                formControlName="confirmPassword"
+                [type]="showPassword ? 'text' : 'password'"
+                placeholder="Confirm password"
+              />
+              <mat-icon matSuffix (click)="showPassword = !showPassword">{{
+                showPassword ? 'visibility' : 'visibility_off'
+              }}</mat-icon>
+              <mat-error
+                *ngIf="
+                  updatePasswordForm.get('confirmPassword').hasError('required')
+                "
+                >Confirmation required</mat-error
+              >
+              <mat-error
+                *ngIf="
+                  updatePasswordForm
+                    .get('confirmPassword')
+                    .hasError('shouldMatch')
+                "
+                >Passwords do not match!</mat-error
+              >
+            </mat-form-field>
+          </div>
+
+          <div class="fx-row">
+            <button
+              [disabled]="
+                updatePasswordForm.invalid || updatePasswordForm.disabled
+              "
+              mat-raised-button
+              class="btn_submit"
+            >
+              Submit
+            </button>
+            <button
+              type="button"
+              mat-stroked-button
+              class="btn_cancel"
+              (click)="cancelUpdatePassword()"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

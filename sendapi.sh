@@ -1,0 +1,1 @@
+rsync -a ./api root@34.87.176.230:/home/injoker/ --verbose; ssh root@34.87.176.230

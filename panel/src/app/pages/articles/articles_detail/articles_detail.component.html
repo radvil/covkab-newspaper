@@ -1,0 +1,49 @@
+<div class="app-main__inner">
+  <app-page_title
+    icon="pe-7s-news-paper"
+    title="Articles"
+    subtitle="Detail artikel"
+  ></app-page_title>
+
+  <div class="main card">
+    <div class="article">
+      <div *ngIf="currentUser._id == article?.author._id" class="edit_space">
+        <button (click)="editArticle(article?._id)" mat-flat-button>
+          <mat-icon>edit</mat-icon>&nbsp; Edit Artikel
+        </button>
+
+        <button (click)="deleteArticle(article?._id)" mat-flat-button>
+          <mat-icon>delete</mat-icon>&nbsp; Delete Artikel
+        </button>
+      </div>
+      <div class="article_title">
+        <div class="title">
+          {{ article?.title }}
+        </div>
+      </div>
+
+      <div class="article_meta">
+        <div class="photo_space">
+          <img [src]="defaultAvatar" alt="user photo" />
+        </div>
+
+        <div class="detail_space">
+          <div class="name">
+            Author post : <b>{{ article?.author?.name }}</b>
+          </div>
+          <div class="date_space">Tanggal post : {{ article?.createdAt | date }}</div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="article_image">
+        <img [src]="article?.image" alt="article image" />
+      </div>
+
+      <div class="article_detail">
+        <div id="content" [innerHTML]="article?.content"></div>
+      </div>
+    </div>
+  </div>
+</div>
